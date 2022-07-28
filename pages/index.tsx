@@ -12,8 +12,9 @@ import HomeProjects from './components/HomeProjects'
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div >
       <Navbar />
+      
       <HomeBanner />
       {/* <BlogList /> */}
       <HomeExperience />

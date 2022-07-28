@@ -18,7 +18,7 @@ import {
   
   export default function CallToActionWithVideo() {
     return (
-      <Container maxW={'7xl'}>
+      <Container maxW={'7xl'} marginBottom={'2rem'}>
         <Stack
           align={'center'}
           spacing={{ base: 8, md: 10 }}
@@ -35,8 +35,14 @@ import {
                 turja chowdhury
               </Text>
             </Heading>
-            <Text color={'gray.500'}>
-            hey there! welcome to my little corner of the internet. i'm driven and passionate about emerging 
+            <Text color={'gray.500'}
+            fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} >
+            
+            hey there! welcome to my little corner of the internet. 
+            </Text>
+            <Text color={'gray.500'}
+            fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} >
+            i'm driven and passionate about emerging 
             technologies challenging complex problems. building in Web3 and always learning.
             </Text>
             <Stack

@@ -13,6 +13,8 @@ import {
   SpaceProps,
   useColorModeValue,
   Container,
+  Flex,
+  Stack,
   VStack,
 } from '@chakra-ui/react';
 
@@ -50,13 +52,29 @@ export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
 
 const ArticleList = () => {
   return (
-    <Container maxW={'7xl'} p="12">      
+    <Container maxW={'6xl'} p="12">      
       <Heading as="h2" marginTop="5">
         projects
       </Heading>
       <Divider marginTop="5" />
 
-      <Box 
+      <Flex display={{ base: 'none', md: 'flex' }}>
+          <DesktopNav />
+        </Flex>   
+      <MobileNav />
+
+      
+    </Container>
+  );
+};
+
+
+
+const DesktopNav = () => {
+
+  return (
+    <div> 
+       <Box 
             position={'relative'}
             height={'150px'}
             rounded={'2xl'}
@@ -64,6 +82,9 @@ const ArticleList = () => {
             width={'full'}
             overflow={'hidden'}
             marginTop={'2rem'}
+            marginBottom={'1rem'}
+            // border={'solid; 0.5rem'}
+            // borderColor={'gray'}
         >
       <Wrap spacing="30px" marginTop="5">
       <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '5rem' }}>
@@ -182,9 +203,149 @@ const ArticleList = () => {
 
       
       </HStack>
-
       
-    </Container>
+    </div>
+
+  );
+};
+
+
+const MobileNav = () => {
+
+  return (
+    <div>
+        <Stack
+          bg={useColorModeValue('white', 'gray.800')}
+          p={4}
+          display={{ md: 'none' }}>
+        
+        
+      <Box 
+            position={'relative'}
+            height={'150px'}
+            rounded={'2xl'}
+            boxShadow={'2xl'}
+            width={'full'}
+            overflow={'hidden'}
+            marginTop={'2rem'}
+        >
+      <Wrap spacing="30px" marginTop="5">
+      <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '5rem' }}>
+          <Box w="100%">
+            
+            <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
+            <Heading fontSize="xl" marginTop="2">
+              <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
+                Granted
+              </Link>
+            </Heading>
+            <Text as="p" fontSize="md" marginTop="2">
+            Milestone-driven granting solution to provide visibility and bidirectional for sponsors and developers.
+            </Text>
+            <BlogAuthor
+              name="John Doe"
+              date={new Date('2021-04-06T19:01:27Z')}
+            />
+          </Box>
+        </WrapItem>
+      </Wrap>
+      </Box>
+
+      {/* <HStack> */}
+        <Box 
+            position={'relative'}
+            height={'200px'}
+            rounded={'2xl'}
+            boxShadow={'2xl'}
+            width={'full'}
+            overflow={'hidden'}
+        >
+      <Wrap spacing="30px" marginTop="5">
+      <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '3rem', marginRight: '3rem' }}>
+          <Box w="100%">
+            
+            <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
+            <Heading fontSize="xl" marginTop="2">
+              <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
+                Unravel 
+              </Link>
+            </Heading>
+            <Text as="p" fontSize="md" marginTop="2">
+                Gen-Z Web3 research curator including deep dive product reviews.
+            </Text>
+            <BlogAuthor
+              name="John Doe"
+              date={new Date('2021-04-06T19:01:27Z')}
+            />
+          </Box>
+        </WrapItem>
+      </Wrap>
+      </Box>
+
+      <Box 
+            position={'relative'}
+            height={'200px'}
+            rounded={'2xl'}
+            boxShadow={'2xl'}
+            width={'full'}
+            overflow={'hidden'}
+        >
+      <Wrap spacing="30px" marginTop="5">
+      <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '3rem', marginRight: '3rem' }}>
+          <Box w="100%">
+            
+            <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
+            <Heading fontSize="xl" marginTop="2">
+              <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
+                Unravel 
+              </Link>
+            </Heading>
+            <Text as="p" fontSize="md" marginTop="2">
+                Gen-Z Web3 research curator including deep dive product reviews.
+            </Text>
+            <BlogAuthor
+              name="John Doe"
+              date={new Date('2021-04-06T19:01:27Z')}
+            />
+          </Box>
+        </WrapItem>
+      </Wrap>
+      </Box>
+
+      <Box 
+            position={'relative'}
+            height={'200px'}
+            rounded={'2xl'}
+            boxShadow={'2xl'}
+            width={'full'}
+            overflow={'hidden'}
+        >
+      <Wrap spacing="30px" marginTop="5">
+      <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '3rem', marginRight: '3rem' }}>
+          <Box w="100%">
+            
+            <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
+            <Heading fontSize="xl" marginTop="2">
+              <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
+                Unravel 
+              </Link>
+            </Heading>
+            <Text as="p" fontSize="md" marginTop="2">
+                Gen-Z Web3 research curator including deep dive product reviews.
+            </Text>
+            <BlogAuthor
+              name="John Doe"
+              date={new Date('2021-04-06T19:01:27Z')}
+            />
+          </Box>
+        </WrapItem>
+      </Wrap>
+      </Box>
+      
+      </Stack>
+
+      </div>
+      
   );
 };
 
