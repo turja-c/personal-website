@@ -161,7 +161,7 @@ const DesktopNav = () => {
               </Link>
             </Heading>
             <Text as="p" fontSize="md" marginTop="2">
-            If you're looking to purchase your first NFT, you&apos;ve most likely 
+            If you&apos;re looking to purchase your first NFT, you&apos;ve most likely 
             heard of OpenSea in the same sentence. An NFT marketplace that has 
             gained tremendous attention in the past few months and undoubtly will continue to excel in the years to come.
             But before we take any step forward, let&apos;s quickly understand...
