@@ -39,20 +39,12 @@ const BlogTags: React.FC<IBlogTags> = (props) => {
 
 interface BlogAuthorProps {
   date: Date;
-  name: string;
 }
 
 export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
   return (
     <HStack marginTop="2" spacing="2" display="flex" alignItems="center">
-      <Image
-        borderRadius="full"
-        boxSize="40px"
-        src="https://100k-faces.glitch.me/random-image"
-        alt={`Avatar of ${props.name}`}
-      />
-      <Text fontWeight="medium">{props.name}</Text>
-      <Text>—</Text>
+
       <Text>{props.date.toLocaleDateString()}</Text>
     </HStack>
   );
@@ -83,8 +75,16 @@ const DesktopNav = () => {
 
   return (
     <div> 
-      <HStack>
-        <Box style={{backgroundColor: 'white'}}>
+      <HStack marginTop={'2rem'}>
+      <Box 
+            position={'relative'}
+            // height={'300px'}
+            rounded={'2xl'}
+            boxShadow={'2xl'}
+            // width={'full'}
+            padding={'1.2rem'}
+            overflow={'hidden'}
+        >
       <Wrap spacing="30px" marginTop="5">
       <WrapItem width={{ base: '100%', sm: '90%' }}>
           <Box w="100%">
@@ -92,9 +92,7 @@ const DesktopNav = () => {
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 <Image
                   transform="scale(1.0)"
-                  src={
-                    'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-                  }
+                  src='/static/near.png'
                   alt="some text"
                   objectFit="contain"
                   width="100%"
@@ -108,7 +106,7 @@ const DesktopNav = () => {
             <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                Let's talk Web 3: NEAR Protocol 
+                Let&apos;s talk Web 3: NEAR Protocol 
               </Link>
             </Heading>
             <Text as="p" fontSize="md" marginTop="2">
@@ -118,7 +116,6 @@ const DesktopNav = () => {
             the blockchain space. Did I also forget to mention that this blockchain...
             </Text>
             <BlogAuthor
-              name="John Doe"
               date={new Date('2021-04-06T19:01:27Z')}
             />
           </Box>
@@ -126,7 +123,15 @@ const DesktopNav = () => {
       </Wrap>
       </Box>
 
-      <Box style={{backgroundColor: 'white', padding: '2rem'}}>
+      <Box 
+            position={'relative'}
+            // height={'300px'}
+            rounded={'2xl'}
+            boxShadow={'2xl'}
+            // width={'full'}
+            padding={'1.2rem'}
+            overflow={'hidden'}
+        >
       <Wrap spacing="30px" marginTop="5">
       <WrapItem width={{ base: '100%', sm: '90%' }}>
           <Box w="100%">
@@ -134,9 +139,7 @@ const DesktopNav = () => {
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 <Image
                   transform="scale(1.0)"
-                  src={
-                    'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-                  }
+                  src='/static/opensea.png'
                   alt="some text"
                   objectFit="contain"
                   width="100%"
@@ -150,7 +153,7 @@ const DesktopNav = () => {
             <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                Let's talk Web 3: NEAR Protocol 
+                Let&apos;s talk Web 3: NEAR Protocol 
               </Link>
             </Heading>
             <Text as="p" fontSize="md" marginTop="2">
@@ -160,7 +163,6 @@ const DesktopNav = () => {
             the blockchain space. Did I also forget to mention that this blockchain...
             </Text>
             <BlogAuthor
-              name="John Doe"
               date={new Date('2021-04-06T19:01:27Z')}
             />
           </Box>
@@ -168,7 +170,13 @@ const DesktopNav = () => {
       </Wrap>
       </Box>
 
-      <Box style={{backgroundColor: 'white', padding: '2rem'}}>
+      <Box 
+            position={'relative'}
+            rounded={'2xl'}
+            boxShadow={'2xl'}
+            padding={'1.2rem'}
+            overflow={'hidden'}
+        >
       <Wrap spacing="30px" marginTop="5">
       <WrapItem width={{ base: '100%', sm: '90%' }}>
           <Box w="100%">
@@ -176,9 +184,7 @@ const DesktopNav = () => {
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 <Image
                   transform="scale(1.0)"
-                  src={
-                    'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-                  }
+                  src='/static/flow.png'
                   alt="some text"
                   objectFit="contain"
                   width="100%"
@@ -192,7 +198,7 @@ const DesktopNav = () => {
             <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                Let's talk Web 3: NEAR Protocol 
+                Let&apos;s talk Web 3: NEAR Protocol 
               </Link>
             </Heading>
             <Text as="p" fontSize="md" marginTop="2">
@@ -202,7 +208,6 @@ const DesktopNav = () => {
             the blockchain space. Did I also forget to mention that this blockchain...
             </Text>
             <BlogAuthor
-              name="John Doe"
               date={new Date('2021-04-06T19:01:27Z')}
             />
           </Box>
@@ -226,17 +231,20 @@ const MobileNav = () => {
           bg={useColorModeValue('white', 'gray.800')}
           p={4}
           display={{ md: 'none' }}>
-        <Box style={{backgroundColor: 'white', padding: '2rem'}}>
-      <Wrap spacing="30px" marginTop="5">
+        <Box 
+            position={'relative'}
+            rounded={'2xl'}
+            boxShadow={'2xl'}
+            padding={'1.2rem'}
+            overflow={'hidden'}
+        >      <Wrap spacing="30px" marginTop="5">
       <WrapItem width={{ base: '100%', sm: '90%' }}>
           <Box w="100%">
             <Box borderRadius="lg" overflow="hidden">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 <Image
                   transform="scale(1.0)"
-                  src={
-                    'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-                  }
+                  src='/static/near.png'
                   alt="some text"
                   objectFit="contain"
                   width="100%"
@@ -250,7 +258,7 @@ const MobileNav = () => {
             <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                Let's talk Web 3: NEAR Protocol 
+                Let&apos;s talk Web 3: NEAR Protocol 
               </Link>
             </Heading>
             <Text as="p" fontSize="md" marginTop="2">
@@ -260,7 +268,6 @@ const MobileNav = () => {
             the blockchain space. Did I also forget to mention that this blockchain...
             </Text>
             <BlogAuthor
-              name="John Doe"
               date={new Date('2021-04-06T19:01:27Z')}
             />
           </Box>
@@ -268,7 +275,13 @@ const MobileNav = () => {
       </Wrap>
       </Box>
 
-      <Box style={{backgroundColor: 'white', padding: '2rem'}}>
+      <Box 
+            position={'relative'}
+            rounded={'2xl'}
+            boxShadow={'2xl'}
+            padding={'1.2rem'}
+            overflow={'hidden'}
+        >
       <Wrap spacing="30px" marginTop="5">
       <WrapItem width={{ base: '100%', sm: '90%' }}>
           <Box w="100%">
@@ -276,9 +289,7 @@ const MobileNav = () => {
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 <Image
                   transform="scale(1.0)"
-                  src={
-                    'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-                  }
+                  src='static/opensea.png'
                   alt="some text"
                   objectFit="contain"
                   width="100%"
@@ -292,7 +303,7 @@ const MobileNav = () => {
             <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                Let's talk Web 3: NEAR Protocol 
+                Let&apos;s talk Web 3: NEAR Protocol 
               </Link>
             </Heading>
             <Text as="p" fontSize="md" marginTop="2">
@@ -302,7 +313,6 @@ const MobileNav = () => {
             the blockchain space. Did I also forget to mention that this blockchain...
             </Text>
             <BlogAuthor
-              name="John Doe"
               date={new Date('2021-04-06T19:01:27Z')}
             />
           </Box>
@@ -310,17 +320,20 @@ const MobileNav = () => {
       </Wrap>
       </Box>
 
-      <Box style={{backgroundColor: 'white', padding: '2rem'}}>
-      <Wrap spacing="30px" marginTop="5">
+      <Box 
+            position={'relative'}
+            rounded={'2xl'}
+            boxShadow={'2xl'}
+            padding={'1.2rem'}
+            overflow={'hidden'}
+        >      <Wrap spacing="30px" marginTop="5">
       <WrapItem width={{ base: '100%', sm: '90%' }}>
           <Box w="100%">
             <Box borderRadius="lg" overflow="hidden">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 <Image
                   transform="scale(1.0)"
-                  src={
-                    'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-                  }
+                  src='/static/flow.png'
                   alt="some text"
                   objectFit="contain"
                   width="100%"
@@ -334,7 +347,7 @@ const MobileNav = () => {
             <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                Let's talk Web 3: NEAR Protocol 
+                Let&apos;s talk Web 3: NEAR Protocol 
               </Link>
             </Heading>
             <Text as="p" fontSize="md" marginTop="2">
@@ -344,7 +357,6 @@ const MobileNav = () => {
             the blockchain space. Did I also forget to mention that this blockchain...
             </Text>
             <BlogAuthor
-              name="John Doe"
               date={new Date('2021-04-06T19:01:27Z')}
             />
           </Box>

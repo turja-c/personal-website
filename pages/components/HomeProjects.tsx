@@ -52,8 +52,8 @@ export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
 
 const ArticleList = () => {
   return (
-    <Container maxW={'6xl'} p="12">      
-      <Heading as="h2" marginTop="5">
+    <Container maxW={'6xl'} p="12" marginBottom='5rem'>      
+      <Heading as="h2" marginTop="5" >
         projects
       </Heading>
       <Divider marginTop="5" />
@@ -87,7 +87,7 @@ const DesktopNav = () => {
             // borderColor={'gray'}
         >
       <Wrap spacing="30px" marginTop="5">
-      <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '5rem' }}>
+      <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '3rem' }}>
           <Box w="100%">
             
             <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
@@ -190,7 +190,7 @@ const DesktopNav = () => {
               </Link>
             </Heading>
             <Text as="p" fontSize="md" marginTop="2">
-                Interactive mental health platform that optimizes user data for personalized resources and assesments.
+                Interactive mental health platform that optimizes for personalized resources and assesments.
             </Text>
             <BlogAuthor
               name="John Doe"
@@ -220,27 +220,27 @@ const MobileNav = () => {
           display={{ md: 'none' }}>
         
         
-      <Box 
+        <Box 
             position={'relative'}
-            height={'150px'}
+            height={'200px'}
             rounded={'2xl'}
             boxShadow={'2xl'}
             width={'full'}
             overflow={'hidden'}
-            marginTop={'2rem'}
+            marginBottom={'1.5rem'}
         >
       <Wrap spacing="30px" marginTop="5">
-      <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '5rem' }}>
+      <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '3rem', marginRight: '3rem' }}>
           <Box w="100%">
             
             <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                Granted
+                Granted 
               </Link>
             </Heading>
             <Text as="p" fontSize="md" marginTop="2">
-            Milestone-driven granting solution to provide visibility and bidirectional for sponsors and developers.
+                Milestone-driven granting solution to provide visibility and bidirectional for sponsors and developers.
             </Text>
             <BlogAuthor
               name="John Doe"
@@ -259,6 +259,7 @@ const MobileNav = () => {
             boxShadow={'2xl'}
             width={'full'}
             overflow={'hidden'}
+            marginBottom={'1.5rem'}
         >
       <Wrap spacing="30px" marginTop="5">
       <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '3rem', marginRight: '3rem' }}>
@@ -289,6 +290,7 @@ const MobileNav = () => {
             boxShadow={'2xl'}
             width={'full'}
             overflow={'hidden'}
+            marginBottom={'1.5rem'}
         >
       <Wrap spacing="30px" marginTop="5">
       <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '3rem', marginRight: '3rem' }}>
@@ -297,11 +299,12 @@ const MobileNav = () => {
             <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                Unravel 
+                The Good News 
               </Link>
             </Heading>
             <Text as="p" fontSize="md" marginTop="2">
-                Gen-Z Web3 research curator including deep dive product reviews.
+               Platform that displays positive articles based on users local community.
+
             </Text>
             <BlogAuthor
               name="John Doe"
@@ -327,11 +330,11 @@ const MobileNav = () => {
             <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                Unravel 
+                MindTrack 
               </Link>
             </Heading>
             <Text as="p" fontSize="md" marginTop="2">
-                Gen-Z Web3 research curator including deep dive product reviews.
+              Interactive mental health platform that optimizes for personalized resources and assesments.
             </Text>
             <BlogAuthor
               name="John Doe"

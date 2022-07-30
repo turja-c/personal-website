@@ -46,12 +46,7 @@ interface BlogAuthorProps {
 export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
   return (
     <HStack marginTop="2" spacing="2" display="flex" alignItems="center">
-      <Image
-        borderRadius="full"
-        boxSize="40px"
-        src="https://100k-faces.glitch.me/random-image"
-        alt={`Avatar of ${props.name}`}
-      />
+    
     </HStack>
   );
 };
@@ -68,7 +63,7 @@ const ArticleList = () => {
 
       <Flex display={{ base: 'none', md: 'flex' }}>
               <DesktopNav />
-            </Flex>
+        </Flex>
 
       {/* <Collapse > */}
         <MobileNav />
@@ -85,36 +80,7 @@ const MobileNav = () => {
       bg={useColorModeValue('white', 'gray.800')}
       p={4}
       display={{ md: 'none' }}>
-        <Box 
-            position={'relative'}
-            // height={'300px'}
-            rounded={'2xl'}
-            boxShadow={'2xl'}
-            width={'full'}
-            overflow={'hidden'}
-        >
-      {/* <Wrap spacing="30px" marginTop="5"> */}
-      {/* <WrapItem width={{ base: '100%', sm: '90%' }}> */}
-          {/* <Box w="100%"> */}
-            {/* <Box borderRadius="lg" overflow="hidden"> */}
-              <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                <Image
-                  transform="scale(1.0)"
-                  src={'./public/images/kpmg.png'}
-                  alt="some text"
-                  objectFit="contain"
-                  width="100%"
-                  transition="0.3s ease-in-out"
-                  _hover={{
-                    transform: 'scale(1.05)',
-                  }}
-                />
-              </Link>
-            {/* </Box> */}
-          {/* </Box> */}
-        {/* </WrapItem> */}
-      {/* </Wrap> */}
-      </Box>
+        
       
 
       <Box 
@@ -132,10 +98,70 @@ const MobileNav = () => {
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 <Image
                   transform="scale(1.0)"
-                  src={
-                    'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-                  }
-                  alt="some text"
+                  src='/static/ripple.png'
+                  objectFit="contain"
+                  alt="ripple"
+                  width="100%"
+                  transition="0.3s ease-in-out"
+                  _hover={{
+                    transform: 'scale(1.05)',
+                  }}
+                />
+              </Link>
+            </Box>
+          </Box>
+        </WrapItem>
+      </Wrap>
+      </Box>
+
+      <Box 
+            position={'relative'}
+            // height={'300px'}
+            rounded={'2xl'}
+            boxShadow={'2xl'}
+            width={'full'}
+            overflow={'hidden'}
+        >
+      <Wrap spacing="30px" marginTop="5">
+      <WrapItem width={{ base: '100%', sm: '90%' }}>
+          <Box w="100%">
+            <Box borderRadius="lg" overflow="hidden">
+              <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
+                <Image
+                  transform="scale(1.0)"
+                  src='/static/kpmg.png'
+                  objectFit="contain"
+                  alt='kpmg'
+                  width="100%"
+                  transition="0.3s ease-in-out"
+                  _hover={{
+                    transform: 'scale(1.05)',
+                  }}
+                />
+              </Link>
+            </Box>
+          </Box>
+        </WrapItem>
+      </Wrap>
+      </Box>
+
+      <Box 
+            position={'relative'}
+            // height={'300px'}
+            rounded={'2xl'}
+            boxShadow={'2xl'}
+            width={'full'}
+            overflow={'hidden'}
+        >
+      <Wrap spacing="30px" marginTop="5">
+      <WrapItem width={{ base: '100%', sm: '90%' }}>
+          <Box w="100%">
+            <Box borderRadius="lg" overflow="hidden">
+              <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
+                <Image
+                  transform="scale(1.0)"
+                  src='/static/scotia.png'
+                  alt='scotia'
                   objectFit="contain"
                   width="100%"
                   transition="0.3s ease-in-out"
@@ -165,10 +191,8 @@ const MobileNav = () => {
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 <Image
                   transform="scale(1.0)"
-                  src={
-                    'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-                  }
-                  alt="some text"
+                  src='/static/d_d.png'
+                  alt='d_d'
                   objectFit="contain"
                   width="100%"
                   transition="0.3s ease-in-out"
@@ -198,10 +222,8 @@ const MobileNav = () => {
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 <Image
                   transform="scale(1.0)"
-                  src={
-                    'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-                  }
-                  alt="some text"
+                  src='/static/tmls.png'
+                  alt='tmls'
                   objectFit="contain"
                   width="100%"
                   transition="0.3s ease-in-out"
@@ -231,44 +253,9 @@ const MobileNav = () => {
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 <Image
                   transform="scale(1.0)"
-                  src={
-                    'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-                  }
-                  alt="some text"
+                  src='/static/alo.png'
                   objectFit="contain"
-                  width="100%"
-                  transition="0.3s ease-in-out"
-                  _hover={{
-                    transform: 'scale(1.05)',
-                  }}
-                />
-              </Link>
-            </Box>
-          </Box>
-        </WrapItem>
-      </Wrap>
-      </Box>
-
-      <Box 
-            position={'relative'}
-            // height={'300px'}
-            rounded={'2xl'}
-            boxShadow={'2xl'}
-            width={'full'}
-            overflow={'hidden'}
-        >
-      <Wrap spacing="30px" marginTop="5">
-      <WrapItem width={{ base: '100%', sm: '90%' }}>
-          <Box w="100%">
-            <Box borderRadius="lg" overflow="hidden">
-              <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                <Image
-                  transform="scale(1.0)"
-                  src={
-                    'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-                  }
-                  alt="some text"
-                  objectFit="contain"
+                  alt='alo'
                   width="100%"
                   transition="0.3s ease-in-out"
                   _hover={{
@@ -314,8 +301,8 @@ const DesktopNav = () => {
                     transform="scale(1.0)"
                     // src={'https://images.unsplash.com/photos/NDfDl9hKgNs'}
                     // src={'https://images.unsplash.com/photo-NDfDl9hKgNs&auto=format&fit=crop&w=800&q=80'}
-                    src='/static/rippleV.svg'
-                    alt="some text"
+                    src='/static/ripple.png'
+                    alt='ripple'
                     objectFit="contain"
                     height="12rem"
                     width="70rem"
@@ -345,7 +332,7 @@ const DesktopNav = () => {
                   <Image
                     transform="scale(1.0)"
                     src='/static/kpmg.png'
-                    alt="some text"
+                    alt='kpmg'
                     objectFit="contain"
                     height="12rem"
                     width="70rem"
@@ -376,7 +363,7 @@ const DesktopNav = () => {
                   <Image
                     transform="scale(1.0)"
                     src='/static/scotia.png'
-                    alt="some text"
+                    alt='scotia'
                     objectFit="contain"
                     height="12rem"
                     width="70rem"
@@ -410,7 +397,7 @@ const DesktopNav = () => {
                     <Image
                       transform="scale(1.0)"
                       src='/static/d_d.png'
-                      alt="some text"
+                      alt='d_d'
                       objectFit="contain"
                       height="12rem"
                       width="70rem"
@@ -440,7 +427,7 @@ const DesktopNav = () => {
                     <Image
                       transform="scale(1.0)"
                       src='/static/tmls.png'
-                      alt="some text"
+                      alt='tmls'
                       objectFit="contain"
                       height="12rem"
                       width="70rem"
@@ -470,8 +457,8 @@ const DesktopNav = () => {
                   <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                     <Image
                       transform="scale(1.0)"
-                      src='/static/alo.svg'
-                      alt="some text"
+                      src='/static/alo.png'
+                      alt='alo'
                       objectFit="contain"
                       height="12rem"
                       width="70rem"
