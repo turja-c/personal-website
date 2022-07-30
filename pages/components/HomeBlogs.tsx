@@ -161,10 +161,10 @@ const DesktopNav = () => {
               </Link>
             </Heading>
             <Text as="p" fontSize="md" marginTop="2">
-            If you're looking to purchase your first NFT, you’ve most likely 
+            If you're looking to purchase your first NFT, you&apos;ve most likely 
             heard of OpenSea in the same sentence. An NFT marketplace that has 
             gained tremendous attention in the past few months and undoubtly will continue to excel in the years to come.
-            But before we take any step forward, let’s quickly understand...
+            But before we take any step forward, let&apos;s quickly understand...
             </Text>
             <Button height={'2rem'} marginTop={'1rem'}>Read more</Button>
           </Box>
