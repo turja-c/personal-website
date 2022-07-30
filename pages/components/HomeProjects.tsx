@@ -14,9 +14,11 @@ import {
   useColorModeValue,
   Container,
   Flex,
+  Spacer,
   Stack,
   VStack,
 } from '@chakra-ui/react';
+import { ArrowRightIcon } from '@chakra-ui/icons'
 
 interface IBlogTags {
   tags: Array<string>;
@@ -28,7 +30,7 @@ const BlogTags: React.FC<IBlogTags> = (props) => {
     <HStack spacing={2} marginTop={props.marginTop}>
       {props.tags.map((tag) => {
         return (
-          <Tag size={'md'} variant="solid" colorScheme="orange" key={tag}>
+          <Tag size={'md'} variant="solid" colorScheme="green" key={tag}>
             {tag}
           </Tag>
         );
@@ -53,9 +55,16 @@ export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
 const ArticleList = () => {
   return (
     <Container maxW={'6xl'} p="12" marginBottom='5rem'>      
-      <Heading as="h2" marginTop="5" >
+      <Flex>
+      <Heading as="h2" marginTop="5">
         projects
       </Heading>
+      <Spacer />
+      <Text marginTop='2rem' fontWeight={'bold'}>Learn more  
+        &nbsp;
+        <ArrowRightIcon w={3} h={3} /> 
+      </Text>
+    </Flex> 
       <Divider marginTop="5" />
 
       <Flex display={{ base: 'none', md: 'flex' }}>
@@ -90,7 +99,7 @@ const DesktopNav = () => {
       <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '3rem' }}>
           <Box w="100%">
             
-            <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
+            <BlogTags tags={['Web3', 'Full-Stack', 'ETHNewYork']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 Granted
@@ -121,7 +130,7 @@ const DesktopNav = () => {
       <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '3rem', marginRight: '3rem' }}>
           <Box w="100%">
             
-            <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
+            <BlogTags tags={['Web3', 'Product Reviews']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 Unravel 
@@ -152,7 +161,7 @@ const DesktopNav = () => {
       <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '3rem', marginRight: '3rem' }}>
           <Box w="100%">
             
-            <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
+            <BlogTags tags={['Hackathon', 'Full-Stack']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 The Good News 
@@ -183,7 +192,7 @@ const DesktopNav = () => {
       <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '3rem', marginRight: '3rem' }}>
           <Box w="100%">
             
-            <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
+            <BlogTags tags={['Hackathon', 'Full-Stack']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 MindTrack
@@ -233,7 +242,7 @@ const MobileNav = () => {
       <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '3rem', marginRight: '3rem' }}>
           <Box w="100%">
             
-            <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
+            <BlogTags tags={['Web3', 'Full-Stack', 'ETHNewYork']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 Granted 
@@ -265,7 +274,7 @@ const MobileNav = () => {
       <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '3rem', marginRight: '3rem' }}>
           <Box w="100%">
             
-            <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
+            <BlogTags tags={['Web3', 'Product Reviews']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 Unravel 
@@ -296,7 +305,7 @@ const MobileNav = () => {
       <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '3rem', marginRight: '3rem' }}>
           <Box w="100%">
             
-            <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
+            <BlogTags tags={['Hackathon', 'Full-Stack']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 The Good News 
@@ -327,7 +336,7 @@ const MobileNav = () => {
       <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '3rem', marginRight: '3rem' }}>
           <Box w="100%">
             
-            <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
+            <BlogTags tags={['Hackathon', 'Full-Stack']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 MindTrack 

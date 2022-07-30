@@ -16,7 +16,7 @@ import {
     useColorModeValue,
   } from '@chakra-ui/react';
   import { BsTwitter, BsGithub, BsLinkedin, BsTelegram } from 'react-icons/bs';
-  
+
   export default function CallToActionWithVideo() {
     return (
       <Container maxW={'7xl'} marginBottom={'2rem'}>
@@ -182,7 +182,7 @@ import {
                 <Link href="https://linkedin.com/in/tchowd"  color="#000">
                   <Icon as={BsLinkedin} w={35} h={35} style={{marginRight: '2rem'}}/>
                 </Link>
-                <Link href="turja.c16@gmail.com"  color="#000">
+                <Link href='https://telegram.org/tchowd'  color="#000">
                   <Icon as={BsTelegram} w={35} h={35}/>
                 </Link>
             </HStack>

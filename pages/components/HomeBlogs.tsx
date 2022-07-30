@@ -16,7 +16,11 @@ import {
   useColorModeValue,
   Container,
   VStack,
+  Spacer,
+  Button,
 } from '@chakra-ui/react';
+import { ArrowRightIcon } from '@chakra-ui/icons'
+
 
 interface IBlogTags {
   tags: Array<string>;
@@ -28,7 +32,7 @@ const BlogTags: React.FC<IBlogTags> = (props) => {
     <HStack spacing={2} marginTop={props.marginTop}>
       {props.tags.map((tag) => {
         return (
-          <Tag size={'md'} variant="solid" colorScheme="orange" key={tag}>
+          <Tag size={'md'} variant="solid" colorScheme="green" key={tag}>
             {tag}
           </Tag>
         );
@@ -53,19 +57,21 @@ export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
 const ArticleList = () => {
   return (
     <Container maxW={'6xl'} p="12">      
-      <Heading as="h2" marginTop="">
+      <Flex>
+      <Heading as="h2" marginTop="5">
         thoughts
       </Heading>
+      <Spacer />
+      <Text marginTop='2rem' fontWeight={'bold'}>Learn more  
+        &nbsp;
+        <ArrowRightIcon w={3} h={3} /> 
+      </Text>
+    </Flex> 
       <Divider marginTop="5" />
-
-      
-
       <Flex display={{ base: 'none', md: 'flex' }}>
           <DesktopNav />
-        </Flex>      
-        
+        </Flex>            
       <MobileNav />
-
     </Container>
   );
 };
@@ -103,7 +109,7 @@ const DesktopNav = () => {
                 />
               </Link>
             </Box>
-            <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
+            <BlogTags tags={['Web3', 'Product Review']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 Let&apos;s talk Web 3: NEAR Protocol 
@@ -115,9 +121,7 @@ const DesktopNav = () => {
             revolutionized system and higher compared to the impact of AWS in 
             the blockchain space. Did I also forget to mention that this blockchain...
             </Text>
-            <BlogAuthor
-              date={new Date('2021-04-06T19:01:27Z')}
-            />
+            <Button height={'2rem'} marginTop={'1rem'}>Read more</Button>
           </Box>
         </WrapItem>
       </Wrap>
@@ -150,21 +154,19 @@ const DesktopNav = () => {
                 />
               </Link>
             </Box>
-            <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
+            <BlogTags tags={['Web3', 'Product Review']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                Let&apos;s talk Web 3: NEAR Protocol 
+                Let&apos;s talk Web 3: OpenSea 
               </Link>
             </Heading>
             <Text as="p" fontSize="md" marginTop="2">
-            Imagine a blockchain that is designed for developers, capable of 
-            supporting decentralized applications (dApps) through an entirely 
-            revolutionized system and higher compared to the impact of AWS in 
-            the blockchain space. Did I also forget to mention that this blockchain...
+            If you're looking to purchase your first NFT, you’ve most likely 
+            heard of OpenSea in the same sentence. An NFT marketplace that has 
+            gained tremendous attention in the past few months and undoubtly will continue to excel in the years to come.
+            But before we take any step forward, let’s quickly understand...
             </Text>
-            <BlogAuthor
-              date={new Date('2021-04-06T19:01:27Z')}
-            />
+            <Button height={'2rem'} marginTop={'1rem'}>Read more</Button>
           </Box>
         </WrapItem>
       </Wrap>
@@ -195,21 +197,19 @@ const DesktopNav = () => {
                 />
               </Link>
             </Box>
-            <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
+            <BlogTags tags={['Web3', 'Product Review']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                Let&apos;s talk Web 3: NEAR Protocol 
+                Let&apos;s talk Web 3: Flow Blockchain
               </Link>
             </Heading>
             <Text as="p" fontSize="md" marginTop="2">
-            Imagine a blockchain that is designed for developers, capable of 
-            supporting decentralized applications (dApps) through an entirely 
-            revolutionized system and higher compared to the impact of AWS in 
-            the blockchain space. Did I also forget to mention that this blockchain...
+            Flow is a layer one blockchain created to adopt an improved approach 
+            to entertainment-driven crypto assets specifically Non-Fungible Tokens 
+            (NFTs). It aims to improve scalability, transaction costs, and model development 
+            (smart contracts) beyond the traditional capabilities...
             </Text>
-            <BlogAuthor
-              date={new Date('2021-04-06T19:01:27Z')}
-            />
+            <Button height={'2rem'} marginTop={'1rem'}>Read more</Button>
           </Box>
         </WrapItem>
       </Wrap>
@@ -255,7 +255,7 @@ const MobileNav = () => {
                 />
               </Link>
             </Box>
-            <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
+            <BlogTags tags={['Web3', 'Product Review']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 Let&apos;s talk Web 3: NEAR Protocol 
@@ -300,7 +300,7 @@ const MobileNav = () => {
                 />
               </Link>
             </Box>
-            <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
+            <BlogTags tags={['Web3', 'Product Review']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 Let&apos;s talk Web 3: NEAR Protocol 
@@ -344,7 +344,7 @@ const MobileNav = () => {
                 />
               </Link>
             </Box>
-            <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
+            <BlogTags tags={['Web3', 'Product Review']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 Let&apos;s talk Web 3: NEAR Protocol 

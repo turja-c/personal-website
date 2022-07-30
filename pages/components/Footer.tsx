@@ -56,16 +56,16 @@ import {
           align={{ base: 'center', md: 'center' }}>
           <Text>tchowd © 2022 </Text>
           <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'Twitter'} href={'#'}>
+            <SocialButton label={'Twitter'} href="https://twitter.com/tchowd_">
               <FaTwitter />
             </SocialButton>
-            <SocialButton label={'YouTube'} href={'#'}>
+            <SocialButton label={'Github'} href="https://github.com/turja-c">
               <FaGithub />
             </SocialButton>
-            <SocialButton label={'Instagram'} href={'#'}>
+            <SocialButton label={'Linkedin'} href="https://linkedin.com/in/tchowd">
               <FaLinkedin />
             </SocialButton>
-            <SocialButton label={'Telegram'} href={'#'}>
+            <SocialButton label={'Telegram'} href='https://telegram.org/tchowd'>
               <FaTelegram />
             </SocialButton>
           </Stack>

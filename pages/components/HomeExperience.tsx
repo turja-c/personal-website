@@ -7,6 +7,7 @@ import {
   Text,
   Divider,
   HStack,
+  Spacer,
   Collapse,
   Tag,
   Flex,
@@ -18,6 +19,7 @@ import {
   Stack,
   VStack,
 } from '@chakra-ui/react';
+import { ArrowRightIcon } from '@chakra-ui/icons'
 
 interface IBlogTags {
   tags: Array<string>;
@@ -53,10 +55,17 @@ export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
 
 const ArticleList = () => {
   return (
-    <Container maxW={'6xl'} p="12" >      
+    <Container maxW={'6xl'} p="12" >   
+    <Flex>
       <Heading as="h2" marginTop="5">
-        experience
+        experiences
       </Heading>
+      <Spacer />
+      <Text marginTop='2rem' fontWeight={'bold'}>Learn more  
+        &nbsp;
+        <ArrowRightIcon w={3} h={3} /> 
+      </Text>
+    </Flex> 
       <Divider marginTop="5" />
 
       
@@ -65,9 +74,7 @@ const ArticleList = () => {
               <DesktopNav />
         </Flex>
 
-      {/* <Collapse > */}
         <MobileNav />
-      {/* </Collapse> */}
     </Container>
 
 
