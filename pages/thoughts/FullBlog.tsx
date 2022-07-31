@@ -73,9 +73,7 @@ const ArticleList = () => {
             <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
               <Image
                 borderRadius="lg"
-                src={
-                  'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-                }
+                src='/static/activate.png'
                 alt="some good alt text"
                 objectFit="contain"
               />
@@ -140,9 +138,7 @@ const ArticleList = () => {
             <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
               <Image
                 borderRadius="lg"
-                src={
-                  'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-                }
+                src='/static/near.png'
                 alt="some good alt text"
                 objectFit="contain"
               />
@@ -207,9 +203,7 @@ const ArticleList = () => {
             <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
               <Image
                 borderRadius="lg"
-                src={
-                  'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-                }
+                src='/static/metamask.png'
                 alt="some good alt text"
                 objectFit="contain"
               />
@@ -274,9 +268,7 @@ const ArticleList = () => {
             <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
               <Image
                 borderRadius="lg"
-                src={
-                  'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-                }
+                src='/static/opensea.png'
                 alt="some good alt text"
                 objectFit="contain"
               />
@@ -340,9 +332,7 @@ const ArticleList = () => {
             <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
               <Image
                 borderRadius="lg"
-                src={
-                  'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-                }
+                src='/static/flow.png'
                 alt="some good alt text"
                 objectFit="contain"
               />
@@ -404,9 +394,7 @@ const ArticleList = () => {
             <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
               <Image
                 borderRadius="lg"
-                src={
-                  'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-                }
+                src='/static/crypto.png'
                 alt="some good alt text"
                 objectFit="contain"
               />
@@ -468,9 +456,7 @@ const ArticleList = () => {
             <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
               <Image
                 borderRadius="lg"
-                src={
-                  'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-                }
+                src='/static/cyber.png'
                 alt="some good alt text"
                 objectFit="contain"
               />
@@ -533,9 +519,7 @@ const ArticleList = () => {
             <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
               <Image
                 borderRadius="lg"
-                src={
-                  'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-                }
+                src='/static/blockchain.png'
                 alt="some good alt text"
                 objectFit="contain"
               />
@@ -597,9 +581,7 @@ const ArticleList = () => {
             <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
               <Image
                 borderRadius="lg"
-                src={
-                  'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-                }
+                src='/static/nocode.png'
                 alt="some good alt text"
                 objectFit="contain"
               />
