@@ -54,12 +54,14 @@ import {
           align={'center'}
           spacing={{ base: 8, md: 10 }}
           py={{ base: 20, md: 28 }}
-          direction={{ base: 'column', md: 'row' }}>
-          <Stack flex={1} spacing={{ base: 5, md: 10 }}>
+          direction={{ base: 'column', md: 'row' }} 
+          >
+          <Stack flex={1} spacing={{ base: 5, md: 10 }} >
             <Heading
               lineHeight={1.1}
               fontWeight={600}
-              fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
+              fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}
+              >
               
               <br />
               <Text as={'span'} color={'black.400'}>
@@ -145,6 +147,7 @@ import {
           py={{ base: 20, md: 28 }}
           direction={{ base: 'column', md: 'row' }}
           display={{md: 'none'}}
+          marginTop={'-3rem'}
           >
           <Stack flex={1} spacing={{ base: 5, md: 10 }}>
             <Heading

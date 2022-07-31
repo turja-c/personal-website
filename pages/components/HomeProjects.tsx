@@ -99,7 +99,7 @@ const DesktopNav = () => {
       <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '3rem' }}>
           <Box w="100%">
             
-            <BlogTags tags={['Web3', 'Full-Stack', 'ETHNewYork']} marginTop="3" />
+            <BlogTags tags={['Full-Stack', 'ETHNewYork']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 Granted
@@ -242,7 +242,7 @@ const MobileNav = () => {
       <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '3rem', marginRight: '3rem' }}>
           <Box w="100%">
             
-            <BlogTags tags={['Web3', 'Full-Stack', 'ETHNewYork']} marginTop="3" />
+            <BlogTags tags={['Full-Stack', 'ETHNewYork']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 Granted 
