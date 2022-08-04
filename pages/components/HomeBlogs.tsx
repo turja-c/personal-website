@@ -62,10 +62,12 @@ const ArticleList = () => {
         thoughts
       </Heading>
       <Spacer />
+      <Link href='https://turja.substack.com'>
       <Text marginTop='2rem' fontWeight={'bold'}>Learn more  
         &nbsp;
         <ArrowRightIcon w={3} h={3} /> 
       </Text>
+      </Link>
     </Flex> 
       <Divider marginTop="5" />
       <Flex display={{ base: 'none', md: 'flex' }}>
@@ -83,19 +85,17 @@ const DesktopNav = () => {
     <div> 
       <HStack marginTop={'2rem'}>
       <Box 
-            position={'relative'}
-            // height={'300px'}
-            rounded={'2xl'}
-            boxShadow={'2xl'}
-            // width={'full'}
-            padding={'1.2rem'}
-            overflow={'hidden'}
+          padding={'1.2rem'}
+          position={'relative'}
+          rounded={'2xl'}
+          borderWidth='0.2rem'
+          borderColor='gray.200'
+          _hover={{boxShadow: 'lg'}}
         >
       <Wrap spacing="30px" marginTop="5">
       <WrapItem width={{ base: '100%', sm: '90%' }}>
           <Box w="100%">
             <Box borderRadius="lg" overflow="hidden">
-              <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 <Image
                   transform="scale(1.0)"
                   src='/static/near.png'
@@ -107,7 +107,7 @@ const DesktopNav = () => {
                     transform: 'scale(1.05)',
                   }}
                 />
-              </Link>
+              
             </Box>
             <BlogTags tags={['Web3', 'Product Review']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
@@ -128,13 +128,12 @@ const DesktopNav = () => {
       </Box>
 
       <Box 
-            position={'relative'}
-            // height={'300px'}
-            rounded={'2xl'}
-            boxShadow={'2xl'}
-            // width={'full'}
-            padding={'1.2rem'}
-            overflow={'hidden'}
+        padding={'1.2rem'}
+        position={'relative'}
+        rounded={'2xl'}
+        borderWidth='0.2rem'
+        borderColor='gray.200'
+        _hover={{boxShadow: 'lg'}}
         >
       <Wrap spacing="30px" marginTop="5">
       <WrapItem width={{ base: '100%', sm: '90%' }}>
@@ -173,11 +172,12 @@ const DesktopNav = () => {
       </Box>
 
       <Box 
-            position={'relative'}
-            rounded={'2xl'}
-            boxShadow={'2xl'}
-            padding={'1.2rem'}
-            overflow={'hidden'}
+        padding={'1.2rem'}
+        position={'relative'}
+        rounded={'2xl'}
+        borderWidth='0.2rem'
+        borderColor='gray.200'
+        _hover={{boxShadow: 'lg'}}
         >
       <Wrap spacing="30px" marginTop="5">
       <WrapItem width={{ base: '100%', sm: '90%' }}>
@@ -232,11 +232,12 @@ const MobileNav = () => {
           p={4}
           display={{ md: 'none' }}>
         <Box 
+            padding={'1.2rem'}
             position={'relative'}
             rounded={'2xl'}
-            boxShadow={'2xl'}
-            padding={'1.2rem'}
-            overflow={'hidden'}
+            borderWidth='0.2rem'
+            borderColor='gray.200'
+            _hover={{boxShadow: 'lg'}}
         >      <Wrap spacing="30px" marginTop="5">
       <WrapItem width={{ base: '100%', sm: '90%' }}>
           <Box w="100%">
@@ -276,11 +277,12 @@ const MobileNav = () => {
       </Box>
 
       <Box 
+            padding={'1.2rem'}
             position={'relative'}
             rounded={'2xl'}
-            boxShadow={'2xl'}
-            padding={'1.2rem'}
-            overflow={'hidden'}
+            borderWidth='0.2rem'
+            borderColor='gray.200'
+            _hover={{boxShadow: 'lg'}}
         >
       <Wrap spacing="30px" marginTop="5">
       <WrapItem width={{ base: '100%', sm: '90%' }}>
@@ -321,11 +323,13 @@ const MobileNav = () => {
       </Box>
 
       <Box 
+            padding={'1.2rem'}
             position={'relative'}
             rounded={'2xl'}
-            boxShadow={'2xl'}
-            padding={'1.2rem'}
-            overflow={'hidden'}
+            borderWidth='0.2rem'
+            borderColor='gray.200'
+            _hover={{boxShadow: 'lg'}}
+            marginTop={'20rem'}
         >      <Wrap spacing="30px" marginTop="5">
       <WrapItem width={{ base: '100%', sm: '90%' }}>
           <Box w="100%">

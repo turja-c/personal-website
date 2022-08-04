@@ -88,15 +88,12 @@ const MobileNav = () => {
       p={4}
       display={{ md: 'none' }}>
         
-      
-
       <Box 
             position={'relative'}
-            // height={'300px'}
             rounded={'2xl'}
-            boxShadow={'2xl'}
-            width={'full'}
-            overflow={'hidden'}
+            borderWidth='0.2rem'
+            borderColor='gray.200'
+            _hover={{boxShadow: 'lg'}}
         >
       <Wrap spacing="30px" marginTop="5">
       <WrapItem width={{ base: '100%', sm: '90%' }}>
@@ -123,11 +120,10 @@ const MobileNav = () => {
 
       <Box 
             position={'relative'}
-            // height={'300px'}
             rounded={'2xl'}
-            boxShadow={'2xl'}
-            width={'full'}
-            overflow={'hidden'}
+            borderWidth='0.2rem'
+            borderColor='gray.200'
+            _hover={{boxShadow: 'lg'}}
         >
       <Wrap spacing="30px" marginTop="5">
       <WrapItem width={{ base: '100%', sm: '90%' }}>
@@ -154,11 +150,10 @@ const MobileNav = () => {
 
       <Box 
             position={'relative'}
-            // height={'300px'}
             rounded={'2xl'}
-            boxShadow={'2xl'}
-            width={'full'}
-            overflow={'hidden'}
+            borderWidth='0.2rem'
+            borderColor='gray.200'
+            _hover={{boxShadow: 'lg'}}
         >
       <Wrap spacing="30px" marginTop="5">
       <WrapItem width={{ base: '100%', sm: '90%' }}>
@@ -185,11 +180,10 @@ const MobileNav = () => {
 
       <Box 
             position={'relative'}
-            // height={'300px'}
             rounded={'2xl'}
-            boxShadow={'2xl'}
-            width={'full'}
-            overflow={'hidden'}
+            borderWidth='0.2rem'
+            borderColor='gray.200'
+            _hover={{boxShadow: 'lg'}}
         >
       <Wrap spacing="30px" marginTop="5">
       <WrapItem width={{ base: '100%', sm: '90%' }}>
@@ -215,12 +209,11 @@ const MobileNav = () => {
       </Box>
 
       <Box 
-            position={'relative'}
-            // height={'300px'}
-            rounded={'2xl'}
-            boxShadow={'2xl'}
-            width={'full'}
-            overflow={'hidden'}
+          position={'relative'}
+          rounded={'2xl'}
+          borderWidth='0.2rem'
+          borderColor='gray.200'
+          _hover={{boxShadow: 'lg'}}
         >
       <Wrap spacing="30px" marginTop="5">
       <WrapItem width={{ base: '100%', sm: '90%' }}>
@@ -246,12 +239,11 @@ const MobileNav = () => {
       </Box>
 
       <Box 
-            position={'relative'}
-            // height={'300px'}
-            rounded={'2xl'}
-            boxShadow={'2xl'}
-            width={'full'}
-            overflow={'hidden'}
+        position={'relative'}
+        rounded={'2xl'}
+        borderWidth='0.2rem'
+        borderColor='gray.200'
+        _hover={{boxShadow: 'lg'}}
         >
       <Wrap spacing="30px" marginTop="5">
       <WrapItem width={{ base: '100%', sm: '90%' }}>
@@ -291,19 +283,14 @@ const DesktopNav = () => {
       margin={'2rem'}>
       <Box
         position={'relative'}
-        // height={'300px'}
         rounded={'2xl'}
-        boxShadow={'2xl'}
-        // width={'full'}
-        overflow={'hidden'}
-        // backgroundColor={'blue'}
-
+        borderWidth='0.2rem'
+        borderColor='gray.200'
+        _hover={{boxShadow: 'lg'}}
       >
-        {/* <Wrap spacing="30px" marginTop="5"> */}
-          {/* <WrapItem width={{ base: '100%', sm: '90%' }}> */}
             <Box w="100%">
               <Box borderRadius="lg" overflow="hidden">
-                <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
+                <Link textDecoration="none" _hover={{ textDecoration: 'none'}}>
                   <Image
                     transform="scale(1.0)"
                     // src={'https://images.unsplash.com/photos/NDfDl9hKgNs'}
@@ -312,27 +299,24 @@ const DesktopNav = () => {
                     alt='ripple'
                     objectFit="contain"
                     height="12rem"
+                    rounded='90px'
                     width="70rem"
                     transition="0.3s ease-in-out"
                     _hover={{
-                      transform: 'scale(1.05)',
+                      transform: 'scale(1.05)'                      
                     }} />
                 </Link>
               </Box>
             </Box>
-          {/* </WrapItem> */}
-        {/* </Wrap> */}
       </Box>
       <Box
         position={'relative'}
-        // height={'300px'}
         rounded={'2xl'}
-        boxShadow={'2xl'}
-        // width={'full'}
+        borderWidth='0.2rem'
+        borderColor='gray.200'
+        _hover={{boxShadow: 'lg'}}
         overflow={'hidden'}
       >
-        {/* <Wrap spacing="30px" marginTop="5"> */}
-          {/* <WrapItem width={{ base: '100%', sm: '90%' }}> */}
             <Box w="100%">
               <Box borderRadius="lg" overflow="hidden">
                 <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
@@ -342,6 +326,7 @@ const DesktopNav = () => {
                     alt='kpmg'
                     objectFit="contain"
                     height="12rem"
+                    rounded='90px'
                     width="70rem"
                     transition="0.3s ease-in-out"
                     _hover={{
@@ -350,20 +335,16 @@ const DesktopNav = () => {
                 </Link>
               </Box>
             </Box>
-          {/* </WrapItem> */}
-        {/* </Wrap> */}
       </Box>
 
       <Box
         position={'relative'}
-        // height={'300px'}
         rounded={'2xl'}
-        boxShadow={'2xl'}
-        // width={'full'}
+        borderWidth='0.2rem'
+        borderColor='gray.200'
         overflow={'hidden'}
+        _hover={{boxShadow: 'lg'}}
       >
-        {/* <Wrap spacing="30px" marginTop="5"> */}
-          {/* <WrapItem width={{ base: '100%', sm: '90%' }}> */}
             <Box w="100%">
               <Box borderRadius="lg" overflow="hidden">
                 <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
@@ -373,6 +354,7 @@ const DesktopNav = () => {
                     alt='scotia'
                     objectFit="contain"
                     height="12rem"
+                    rounded='90px'
                     width="70rem"
                     transition="0.3s ease-in-out"
                     _hover={{
@@ -381,104 +363,91 @@ const DesktopNav = () => {
                 </Link>
               </Box>
             </Box>
-          {/* </WrapItem> */}
-        {/* </Wrap> */}
       </Box>
     </HStack>
     <HStack
       margin={'2rem'}>
         <Box
-          position={'relative'}
-          // height={'300px'}
-          rounded={'2xl'}
-          boxShadow={'2xl'}
-          // width={'full'}
-          overflow={'hidden'}
-        >
-          {/* <Wrap spacing="30px" marginTop="5"> */}
-            {/* <WrapItem width={{ base: '100%', sm: '90%' }}> */}
-              <Box w="100%">
-                <Box borderRadius="lg" overflow="hidden"
-                  >
-                  <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                    <Image
-                      transform="scale(1.0)"
-                      src='/static/d_d.png'
-                      alt='d_d'
-                      objectFit="contain"
-                      height="12rem"
-                      width="70rem"
-                      transition="0.3s ease-in-out"
-                      _hover={{
-                        transform: 'scale(1.05)',
-                      }} />
-                  </Link>
-                </Box>
+        position={'relative'}
+        rounded={'2xl'}
+        borderWidth='0.2rem'
+        borderColor='gray.200'
+        overflow={'hidden'}
+        _hover={{boxShadow: 'lg' }}
+      >
+            <Box w="100%">
+              <Box borderRadius="lg" overflow="hidden">
+                <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
+                  <Image
+                    transform="scale(1.0)"
+                    src='/static/d_d.png'
+                    alt='scotia'
+                    objectFit="contain"
+                    height="12rem"
+                    rounded='90px'
+                    width="70rem"
+                    transition="0.3s ease-in-out"
+                    _hover={{
+                      transform: 'scale(1.05)',
+                    }} />
+                </Link>
               </Box>
-            {/* </WrapItem> */}
-          {/* </Wrap> */}
-        </Box>
-        <Box
-          position={'relative'}
-          // height={'300px'}
-          rounded={'2xl'}
-          boxShadow={'2xl'}
-          // width={'full'}
-          overflow={'hidden'}
-        >
-          {/* <Wrap spacing="30px" marginTop="5"> */}
-            {/* <WrapItem width={{ base: '100%', sm: '90%' }}> */}
-              <Box w="100%">
-                <Box borderRadius="lg" overflow="hidden">
-                  <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                    <Image
-                      transform="scale(1.0)"
-                      src='/static/tmls.png'
-                      alt='tmls'
-                      objectFit="contain"
-                      height="12rem"
-                      width="70rem"
-                      transition="0.3s ease-in-out"
-                      _hover={{
-                        transform: 'scale(1.05)',
-                      }} />
-                  </Link>
-                </Box>
+            </Box>
+      </Box>
+      <Box
+        position={'relative'}
+        rounded={'2xl'}
+        borderWidth='0.2rem'
+        borderColor='gray.200'
+        overflow={'hidden'}
+        _hover={{boxShadow: 'lg'}}
+      >
+            <Box w="100%">
+              <Box borderRadius="lg" overflow="hidden">
+                <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
+                  <Image
+                    transform="scale(1.0)"
+                    src='/static/tmls.png'
+                    alt='scotia'
+                    objectFit="contain"
+                    height="12rem"
+                    rounded='90px'
+                    width="70rem"
+                    transition="0.3s ease-in-out"
+                    _hover={{
+                      transform: 'scale(1.05)',
+                    }} />
+                </Link>
               </Box>
-            {/* </WrapItem> */}
-          {/* </Wrap> */}
-        </Box>
-
-        <Box
-          position={'relative'}
-          // height={'300px'}
-          rounded={'2xl'}
-          boxShadow={'2xl'}
-          // width={'full'}
-          overflow={'hidden'}
-        >
-          {/* <Wrap spacing="30px" marginTop="5"> */}
-            {/* <WrapItem width={{ base: '100%', sm: '90%' }}> */}
-              <Box w="100%">
-                <Box borderRadius="lg" overflow="hidden">
-                  <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                    <Image
-                      transform="scale(1.0)"
-                      src='/static/alo.png'
-                      alt='alo'
-                      objectFit="contain"
-                      height="12rem"
-                      width="70rem"
-                      transition="0.3s ease-in-out"
-                      _hover={{
-                        transform: 'scale(1.05)',
-                      }} />
-                  </Link>
-                </Box>
+            </Box>
+      </Box>
+      <Box
+        position={'relative'}
+        rounded={'2xl'}
+        borderWidth='0.2rem'
+        borderColor='gray.200'
+        overflow={'hidden'}
+        _hover={{boxShadow: 'lg'}}
+      >
+            <Box w="100%">
+              <Box borderRadius="lg" overflow="hidden">
+                <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
+                  <Image
+                    transform="scale(1.0)"
+                    src='/static/alo.png'
+                    alt='scotia'
+                    objectFit="contain"
+                    height="12rem"
+                    rounded='90px'
+                    width="70rem"
+                    transition="0.3s ease-in-out"
+                    _hover={{
+                      transform: 'scale(1.05)',
+                    }} />
+                </Link>
               </Box>
-            {/* </WrapItem> */}
-          {/* </Wrap> */}
-        </Box>
+            </Box>
+      </Box>
       </HStack>
       </div>
   );

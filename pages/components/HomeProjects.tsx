@@ -60,10 +60,12 @@ const ArticleList = () => {
         projects
       </Heading>
       <Spacer />
+      <Link href='https://github.com/turja-c/'>
       <Text marginTop='2rem' fontWeight={'bold'}>Learn more  
         &nbsp;
         <ArrowRightIcon w={3} h={3} /> 
       </Text>
+      </Link>
     </Flex> 
       <Divider marginTop="5" />
 
@@ -83,19 +85,22 @@ const DesktopNav = () => {
 
   return (
     <div> 
+      <Link href='https://ethglobal.com/showcase/granted-vtxne' _hover={{ textDecoration: 'none' }}>
        <Box 
             position={'relative'}
             height={'150px'}
             rounded={'2xl'}
-            boxShadow={'2xl'}
+            // boxShadow={'2xl'}
             width={'full'}
             overflow={'hidden'}
             marginTop={'2rem'}
-            marginBottom={'1rem'}
-            // border={'solid; 0.5rem'}
-            // borderColor={'gray'}
+            marginBottom={'2rem'}
+            padding={'1.2rem'}
+            borderWidth='0.2rem'
+            borderColor='gray.200'
+            _hover={{boxShadow: 'lg'}}
         >
-      <Wrap spacing="30px" marginTop="5">
+      <Wrap spacing="30px">
       <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '3rem' }}>
           <Box w="100%">
             
@@ -116,27 +121,34 @@ const DesktopNav = () => {
         </WrapItem>
       </Wrap>
       </Box>
+      </Link>
 
-      <HStack>
+      <HStack marginTop='-3rem'>
+      <Link href='https://github.com/turja-c/unravel' _hover={{ textDecoration: 'none' }}>
         <Box 
             position={'relative'}
             height={'200px'}
             rounded={'2xl'}
-            boxShadow={'2xl'}
+            // boxShadow={'2xl'}
             width={'full'}
             overflow={'hidden'}
+            marginTop={'2rem'}
+            marginBottom={'2rem'}
+            padding={'1.2rem'}
+            borderWidth='0.2rem'
+            borderColor='gray.200'
+            _hover={{boxShadow: 'lg'}}
         >
-      <Wrap spacing="30px" marginTop="5">
-      <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '3rem', marginRight: '3rem' }}>
+      <Wrap spacing="30px" >
+      <WrapItem width={{ base: '100%', sm: '90%' }} >
           <Box w="100%">
-            
             <BlogTags tags={['Web3', 'Product Reviews']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 Unravel 
               </Link>
             </Heading>
-            <Text as="p" fontSize="md" marginTop="2">
+            <Text as="p" fontSize="md">
                 Gen-Z Web3 research curator including deep dive product reviews.
             </Text>
             <BlogAuthor
@@ -147,18 +159,25 @@ const DesktopNav = () => {
         </WrapItem>
       </Wrap>
       </Box>
+    </Link>
 
-      {/* <Box style={{backgroundColor: 'white', padding: '2rem'}}> */}
+      <Link href='https://github.com/omridaniel/goodNews' _hover={{ textDecoration: 'none' }}>
       <Box 
             position={'relative'}
             height={'200px'}
             rounded={'2xl'}
-            boxShadow={'2xl'}
+            // boxShadow={'2xl'}
             width={'full'}
             overflow={'hidden'}
+            marginTop={'2rem'}
+            marginBottom={'2rem'}
+            padding={'1.2rem'}
+            borderWidth='0.2rem'
+            borderColor='gray.200'
+            _hover={{boxShadow: 'lg'}}
         >
-      <Wrap spacing="30px" marginTop="5">
-      <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '3rem', marginRight: '3rem' }}>
+      <Wrap spacing="30px" >
+      <WrapItem width={{ base: '100%', sm: '90%' }} >
           <Box w="100%">
             
             <BlogTags tags={['Hackathon', 'Full-Stack']} marginTop="3" />
@@ -167,7 +186,7 @@ const DesktopNav = () => {
                 The Good News 
               </Link>
             </Heading>
-            <Text as="p" fontSize="md" marginTop="2">
+            <Text as="p" fontSize="md" >
                 Platform that displays positive articles based on users local community.
             </Text>
             <BlogAuthor
@@ -178,18 +197,23 @@ const DesktopNav = () => {
         </WrapItem>
       </Wrap>
       </Box>
-
-      {/* <Box style={{backgroundColor: 'white', padding: '2rem'}}> */}
+    </Link>
+    <Link href='https://github.com/turja-c/MindTrack' _hover={{ textDecoration: 'none' }}>
       <Box 
-            position={'relative'}
-            height={'200px'}
-            rounded={'2xl'}
-            boxShadow={'2xl'}
-            width={'full'}
-            overflow={'hidden'}
+        position={'relative'}
+        height={'200px'}
+        rounded={'2xl'}
+        width={'full'}
+        overflow={'hidden'}
+        marginTop={'2rem'}
+        marginBottom={'2rem'}
+        padding={'1.2rem'}
+        borderWidth='0.2rem'
+        borderColor='gray.200'
+        _hover={{boxShadow: 'lg'}}
         >
-      <Wrap spacing="30px" marginTop="5">
-      <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '3rem', marginRight: '3rem' }}>
+      <Wrap spacing="30px" >
+      <WrapItem width={{ base: '100%', sm: '90%' }}>
           <Box w="100%">
             
             <BlogTags tags={['Hackathon', 'Full-Stack']} marginTop="3" />
@@ -198,7 +222,7 @@ const DesktopNav = () => {
                 MindTrack
               </Link>
             </Heading>
-            <Text as="p" fontSize="md" marginTop="2">
+            <Text as="p" fontSize="md">
                 Interactive mental health platform that optimizes for personalized resources and assesments.
             </Text>
             <BlogAuthor
@@ -209,6 +233,7 @@ const DesktopNav = () => {
         </WrapItem>
       </Wrap>
       </Box>
+      </Link>
 
       
       </HStack>
@@ -232,17 +257,18 @@ const MobileNav = () => {
         <Box 
             position={'relative'}
             height={'200px'}
-            rounded={'2xl'}
-            boxShadow={'2xl'}
-            width={'full'}
             overflow={'hidden'}
             marginBottom={'1.5rem'}
+            padding={'1.2rem'}
+            rounded={'2xl'}
+            borderWidth='0.2rem'
+            borderColor='gray.200'
+            _hover={{boxShadow: 'lg'}}
         >
-      <Wrap spacing="30px" marginTop="5">
-      <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '3rem', marginRight: '3rem' }}>
+      <Wrap spacing="30px">
+      <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '2rem', marginRight: '1rem' }}>
           <Box w="100%">
-            
-            <BlogTags tags={['Full-Stack', 'ETHNewYork']} marginTop="3" />
+            <BlogTags tags={['Full-Stack', 'ETHNewYork']} marginTop="1" />
             <Heading fontSize="xl" marginTop="2">
               <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                 Granted 
@@ -264,14 +290,16 @@ const MobileNav = () => {
         <Box 
             position={'relative'}
             height={'200px'}
-            rounded={'2xl'}
-            boxShadow={'2xl'}
-            width={'full'}
             overflow={'hidden'}
             marginBottom={'1.5rem'}
+            padding={'1.2rem'}
+            rounded={'2xl'}
+            borderWidth='0.2rem'
+            borderColor='gray.200'
+            _hover={{boxShadow: 'lg'}}
         >
-      <Wrap spacing="30px" marginTop="5">
-      <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '3rem', marginRight: '3rem' }}>
+      <Wrap spacing="30px">
+      <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '2rem', marginRight: '1rem' }}>
           <Box w="100%">
             
             <BlogTags tags={['Web3', 'Product Reviews']} marginTop="3" />
@@ -295,14 +323,16 @@ const MobileNav = () => {
       <Box 
             position={'relative'}
             height={'200px'}
-            rounded={'2xl'}
-            boxShadow={'2xl'}
-            width={'full'}
             overflow={'hidden'}
             marginBottom={'1.5rem'}
+            padding={'1.2rem'}
+            rounded={'2xl'}
+            borderWidth='0.2rem'
+            borderColor='gray.200'
+            _hover={{boxShadow: 'lg'}}
         >
-      <Wrap spacing="30px" marginTop="5">
-      <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '3rem', marginRight: '3rem' }}>
+      <Wrap spacing="30px">
+      <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '2rem', marginRight: '1rem' }}>
           <Box w="100%">
             
             <BlogTags tags={['Hackathon', 'Full-Stack']} marginTop="3" />
@@ -325,15 +355,18 @@ const MobileNav = () => {
       </Box>
 
       <Box 
-            position={'relative'}
-            height={'200px'}
-            rounded={'2xl'}
-            boxShadow={'2xl'}
-            width={'full'}
-            overflow={'hidden'}
+          position={'relative'}
+          height={'200px'}
+          overflow={'hidden'}
+          marginBottom={'1.5rem'}
+          padding={'1.2rem'}
+          rounded={'2xl'}
+          borderWidth='0.2rem'
+          borderColor='gray.200'
+          _hover={{boxShadow: 'lg'}}
         >
-      <Wrap spacing="30px" marginTop="5">
-      <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '3rem', marginRight: '3rem' }}>
+      <Wrap spacing="30px" >
+      <WrapItem width={{ base: '100%', sm: '90%' }} style={{marginLeft: '2rem', marginRight: '1rem' }}>
           <Box w="100%">
             
             <BlogTags tags={['Hackathon', 'Full-Stack']} marginTop="3" />
