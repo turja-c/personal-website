@@ -16,9 +16,9 @@ const Home: NextPage = () => {
       
       <HomeBanner />
       {/* <BlogList /> */}
-      <HomeExperience />
       <HomeBlogs />
       <HomeProjects />
+      <HomeExperience />
       <Footer />
     </div>
   )
