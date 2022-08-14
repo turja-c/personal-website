@@ -54,7 +54,7 @@ export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
 
 const ArticleList = () => {
   return (
-    <Container maxW={'6xl'} p="12" marginBottom='5rem'>      
+    <Container maxW={'6xl'} p="12" marginBottom='1rem'>      
       <Flex>
       <Heading as="h2" marginTop="5">
         projects

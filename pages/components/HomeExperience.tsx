@@ -55,7 +55,7 @@ export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
 
 const ArticleList = () => {
   return (
-    <Container maxW={'6xl'} p="12" >   
+    <Container maxW={'6xl'} p="12" marginBottom='4rem'>   
     <Flex>
       <Heading as="h2" marginTop="5">
         experiences
@@ -278,9 +278,10 @@ const MobileNav = () => {
 const DesktopNav = () => {
 
   return (
-    <div>
+    <div >
     <HStack
       margin={'2rem'}>
+        
       <Box
         position={'relative'}
         rounded={'2xl'}
