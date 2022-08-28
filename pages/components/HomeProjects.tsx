@@ -9,6 +9,7 @@ import {
   HStack,
   Tag,
   Wrap,
+  Button,
   WrapItem,
   SpaceProps,
   useColorModeValue,
@@ -113,10 +114,8 @@ const DesktopNav = () => {
             <Text as="p" fontSize="md" marginTop="2">
             Milestone-driven granting solution to provide visibility and bidirectional for sponsors and developers.
             </Text>
-            <BlogAuthor
-              name="John Doe"
-              date={new Date('2021-04-06T19:01:27Z')}
-            />
+          
+            
           </Box>
         </WrapItem>
       </Wrap>

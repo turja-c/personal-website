@@ -13,7 +13,6 @@ const Home: NextPage = () => {
   return (
     <div >
       <Navbar />
-      
       <HomeBanner />
       <HomeBlogs />
       <HomeProjects />

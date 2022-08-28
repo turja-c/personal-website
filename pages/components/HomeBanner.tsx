@@ -78,6 +78,11 @@ import {
             i&apos;m driven and passionate about emerging 
             technologies challenging complex problems. building in Web3 and always learning.
             </Text>
+
+            <Text color={'gray.500'}
+            fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} >
+            📍 CS @ Ryerson University
+            </Text>
             <Stack
               spacing={{ base: 4, sm: 6 }}
               direction={{ base: 'column', sm: 'row' }}>
@@ -90,7 +95,7 @@ import {
                 <Link href="https://linkedin.com/in/tchowd"  color="#000">
                   <Icon as={BsLinkedin} w={35} h={35} style={{marginRight: '2rem'}}/>
                 </Link>
-                <Link href="turja.c16@gmail.com"  color="#000">
+                <Link href="https://t.me/tchowd"  color="#000">
                   <Icon as={BsTelegram} w={35} h={35}/>
                 </Link>
             </Stack>
@@ -170,6 +175,11 @@ import {
             i&apos;m driven and passionate about emerging 
             technologies challenging complex problems. building in Web3 and always learning.
             </Text>
+
+            <Text color={'gray.500'}
+            fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} >
+            📍 CS @ Ryerson University
+            </Text>
             <HStack
               spacing={{ base: 4, sm: 6 }}
               direction={{ base: 'column', sm: 'row' }}
@@ -185,7 +195,7 @@ import {
                 <Link href="https://linkedin.com/in/tchowd"  color="#000">
                   <Icon as={BsLinkedin} w={35} h={35} style={{marginRight: '2rem'}}/>
                 </Link>
-                <Link href='https://telegram.org/tchowd'  color="#000">
+                <Link href='https://t.me/tchowd'  color="#000">
                   <Icon as={BsTelegram} w={35} h={35}/>
                 </Link>
             </HStack>

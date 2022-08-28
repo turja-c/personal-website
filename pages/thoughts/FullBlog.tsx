@@ -50,7 +50,7 @@ const ArticleList = () => {
 
 
       <Box
-        marginTop={{ base: '1', sm: '5' }}
+        marginTop={{ base: '1', sm: '2rem' }}
         display="flex"
         flexDirection={{ base: 'column', sm: 'row' }}
         justifyContent="space-between"
@@ -58,7 +58,12 @@ const ArticleList = () => {
         rounded={'2xl'}
         boxShadow={'2xl'}
         padding={'1.2rem'}
-        overflow={'hidden'}>
+        overflow={'hidden'}
+        width={'full'}
+        marginBottom={'2rem'}
+        borderWidth='0.2rem'
+        borderColor='gray.200'
+        _hover={{boxShadow: 'lg'}}>
         <Box
           display="flex"
           flex="1"
@@ -123,7 +128,15 @@ const ArticleList = () => {
         rounded={'2xl'}
         boxShadow={'2xl'}
         padding={'1.2rem'}
-        overflow={'hidden'}>
+        overflow={'hidden'}
+        width={'full'}
+        marginBottom={'2rem'}
+        borderWidth='0.2rem'
+        borderColor='gray.200'
+        _hover={{boxShadow: 'lg'}}
+        >
+
+          
         <Box
           display="flex"
           flex="1"
@@ -188,7 +201,12 @@ const ArticleList = () => {
         rounded={'2xl'}
         boxShadow={'2xl'}
         padding={'1.2rem'}
-        overflow={'hidden'}>
+        overflow={'hidden'}
+        width={'full'}
+        marginBottom={'2rem'}
+        borderWidth='0.2rem'
+        borderColor='gray.200'
+        _hover={{boxShadow: 'lg'}}>
         <Box
           display="flex"
           flex="1"
@@ -253,7 +271,12 @@ const ArticleList = () => {
         rounded={'2xl'}
         boxShadow={'2xl'}
         padding={'1.2rem'}
-        overflow={'hidden'}>
+        overflow={'hidden'}
+        width={'full'}
+        marginBottom={'2rem'}
+        borderWidth='0.2rem'
+        borderColor='gray.200'
+        _hover={{boxShadow: 'lg'}}>
         <Box
           display="flex"
           flex="1"
@@ -317,7 +340,12 @@ const ArticleList = () => {
         rounded={'2xl'}
         boxShadow={'2xl'}
         padding={'1.2rem'}
-        overflow={'hidden'}>
+        overflow={'hidden'}
+        width={'full'}
+        marginBottom={'2rem'}
+        borderWidth='0.2rem'
+        borderColor='gray.200'
+        _hover={{boxShadow: 'lg'}}>
         <Box
           display="flex"
           flex="1"
@@ -379,7 +407,12 @@ const ArticleList = () => {
         rounded={'2xl'}
         boxShadow={'2xl'}
         padding={'1.2rem'}
-        overflow={'hidden'}>
+        overflow={'hidden'}
+        width={'full'}
+        marginBottom={'2rem'}
+        borderWidth='0.2rem'
+        borderColor='gray.200'
+        _hover={{boxShadow: 'lg'}}>
         <Box
           display="flex"
           flex="1"
@@ -441,7 +474,12 @@ const ArticleList = () => {
         rounded={'2xl'}
         boxShadow={'2xl'}
         padding={'1.2rem'}
-        overflow={'hidden'}>
+        overflow={'hidden'}
+        width={'full'}
+        marginBottom={'2rem'}
+        borderWidth='0.2rem'
+        borderColor='gray.200'
+        _hover={{boxShadow: 'lg'}}>
         <Box
           display="flex"
           flex="1"
@@ -504,7 +542,12 @@ const ArticleList = () => {
         rounded={'2xl'}
         boxShadow={'2xl'}
         padding={'1.2rem'}
-        overflow={'hidden'}>
+        overflow={'hidden'}
+        width={'full'}
+        marginBottom={'2rem'}
+        borderWidth='0.2rem'
+        borderColor='gray.200'
+        _hover={{boxShadow: 'lg'}}>
         <Box
           display="flex"
           flex="1"
@@ -566,7 +609,12 @@ const ArticleList = () => {
         rounded={'2xl'}
         boxShadow={'2xl'}
         padding={'1.2rem'}
-        overflow={'hidden'}>
+        overflow={'hidden'}
+        width={'full'}
+        marginBottom={'2rem'}
+        borderWidth='0.2rem'
+        borderColor='gray.200'
+        _hover={{boxShadow: 'lg'}}>
         <Box
           display="flex"
           flex="1"
