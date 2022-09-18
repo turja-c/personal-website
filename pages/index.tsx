@@ -8,12 +8,14 @@ import Footer from './components/Footer'
 import HomeBlogs from './components/HomeBlogs'
 import HomeExperience from './components/HomeExperience'
 import HomeProjects from './components/HomeProjects'
+import HomeIntro from './components/HomeIntro'
 
 const Home: NextPage = () => {
   return (
     <div >
       <Navbar />
       <HomeBanner />
+      <HomeIntro />
       <HomeBlogs />
       <HomeProjects />
       <HomeExperience />

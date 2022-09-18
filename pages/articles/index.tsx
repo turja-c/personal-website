@@ -3,7 +3,7 @@ import ArticleList from './FullBlog';
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
-const Blog: NextPage = () => {
+const Articles: NextPage = () => {
   return (
     <div >
     <Navbar />
@@ -13,4 +13,4 @@ const Blog: NextPage = () => {
   )
 }
 
-export default Blog;
+export default Articles;

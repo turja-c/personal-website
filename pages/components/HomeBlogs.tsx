@@ -59,7 +59,7 @@ const ArticleList = () => {
     <Container maxW={'6xl'} p="12">      
       <Flex>
       <Heading as="h2" marginTop="5">
-        thoughts
+        articles
       </Heading>
       <Spacer />
       <Link href='https://turja.substack.com'>

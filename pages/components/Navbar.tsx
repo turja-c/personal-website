@@ -225,16 +225,12 @@ import {
       href: '/',
     },
     {
-      label: 'about',
-      href: '/about',
+      label: 'library',
+      href: '/library',
     },
     {
-      label: 'work',
-      href: '/work',
-    },
-    {
-      label: 'thoughts',
-      href: '/thoughts',
+      label: 'articles',
+      href: '/articles',
     },
   ];
   

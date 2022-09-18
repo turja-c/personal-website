@@ -41,11 +41,11 @@ const BlogTags: React.FC<IBlogTags> = (props) => {
 const ArticleList = () => {
   return (
     <Container maxW={'5xl'} p="12" marginBottom={'2rem'}>
-      <Heading as="h1">thoughts &#38; articles</Heading>
+      <Heading as="h1">articles</Heading>
       <Text color={'gray.500'}
             fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} 
             marginTop={'1rem'}>
-            sharing a few of my thoughts and learnings. 
+            sharing a few of my learnings of different industries and products. 
             </Text>
 
 
