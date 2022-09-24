@@ -1,8 +1,8 @@
 import styles from '../../styles/Home.module.css'
-import Card from './component/card'
+import Card from '../../component/card'
 import fs from 'fs'
 import matter from 'gray-matter'
-import { ArticleMeta } from './interface/article'
+import { ArticleMeta } from '../../interfaces/article'
 import { FunctionComponent } from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
@@ -19,7 +19,7 @@ const Home: FunctionComponent<IProps> = ({ articles }) => {
         <Navbar />
 
             <Center style={{marginTop: '5rem'}}>
-                <Text>df</Text>
+                <Text>Writing out loud.</Text>
             </Center>
 
             <Container style={{marginTop: '10rem', marginBottom: '30rem'}}>

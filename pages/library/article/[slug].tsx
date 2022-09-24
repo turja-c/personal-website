@@ -1,8 +1,8 @@
 import { FunctionComponent } from "react";
 import fs from 'fs';
 import matter from "gray-matter";
-import { ArticleInfo } from "../interface/article";
-import Markdown from "../component/markdown";
+import { ArticleInfo } from "../../../interfaces/article";
+import Markdown from "../../../component/markdown";
 import { NextPage } from "next";
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
@@ -16,13 +16,15 @@ const Article: FunctionComponent<IProps> = ({ article }) => {
 	return (
     <div>
     <Navbar />
-    <div style={{marginTop: '5rem', marginBottom: '20rem'}} >
+    <div style={{marginTop: '10rem', marginBottom: '30rem'}} >
         <Container>
                 <Text as={'span'} 
                       color={'black.800'} 
-                      fontSize={'1.5rem'} 
-                     > {article.meta.title}</Text>
-
+                      fontSize={'1.5rem'}
+                      marginBottom={'2rem'} 
+                     > {article.meta.title}   </Text>
+                
+                <br></br> 
                 <br></br>  
 
                 <Text as={'span'} 

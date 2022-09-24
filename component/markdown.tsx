@@ -25,7 +25,7 @@ const Markdown: FunctionComponent<IProps> = ({content}) => {
 
 	return (
     <div >
-		{content}
+		<ReactMarkdown children={content}></ReactMarkdown>
 	</div>
     )
 }
