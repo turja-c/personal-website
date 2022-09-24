@@ -46,18 +46,21 @@ const MobileNav = () => {
       display={{ md: 'none' }}>
     <Stack
       margin={'2rem'}>
+        
         <Text color={'gray.500'}
             fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} > 
-            i enjoy writing about my 
-            learnings, failures and next steps. <br></br>
-            whether i'm giving it my all or stuck in a rut, there's always someway to grow. so i decided to write publicly and share what i learn. <br></br>
-            show up everyday and bet on yourself.  
+            writing about my 
+            learnings, failures and next steps. there&apos;s always someway to grow. so i decided to write publicly and share what i learn. <br></br> <br></br>
+            show up everyday and <b> <a href="https://twitter.com/fredvanvleet" style={{textDecoration: 'underline', cursor: 'pointer'}}>bet on yourself</a></b>.  
         </Text>
         <Center>
             <Text color={'green.400'}
               fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} 
-              padding={'2rem'}> 
-            walk into my library
+              padding={'2rem'}
+              _hover={{textDecoration: 'underline', cursor: 'pointer'}}> 
+              <Link href='/library'>
+              walk into my library
+            </Link>
         </Text>
         </Center>
         
@@ -76,16 +79,18 @@ const DesktopNav = () => {
       margin={'2rem'}>
         <Text color={'gray.500'}
             fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} > 
-            i enjoy writing about my 
-            learnings, failures and next steps. <br></br>
-            whether i'm giving it my all or stuck in a rut, there's always someway to grow. so i decided to write publicly and share what i learn. <br></br>
-            show up everyday and bet on yourself.  
+            writing about my 
+            learnings, failures and next steps. there&apos;s always someway to grow. so i decided to write publicly and share what i learn. <br></br> <br></br>
+            show up everyday and <b> <a href="https://twitter.com/fredvanvleet" style={{textDecoration: 'underline', cursor: 'pointer'}}>bet on yourself</a></b>.  
         </Text>
         <Center>
             <Text color={'green.400'}
               fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} 
-              padding={'2rem'}> 
-            walk into my library
+              padding={'2rem'}
+              _hover={{textDecoration: 'underline', cursor: 'pointer'}}> 
+              <Link href='/library'>
+              walk into my library
+            </Link>
         </Text>
         </Center>
         

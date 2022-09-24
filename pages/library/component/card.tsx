@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FunctionComponent } from "react";
-import { ArticleMeta } from "../interfaces/article";
+import { ArticleMeta } from "../interface/article";
 import styles from "../../../styles/card.module.css";
 import { Box } from "@chakra-ui/react";
 

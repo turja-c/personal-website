@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import fs from 'fs';
 import matter from "gray-matter";
-import { ArticleInfo } from "../interfaces/article";
+import { ArticleInfo } from "../interface/article";
 import Markdown from "../component/markdown";
 import { NextPage } from "next";
 import Navbar from '../../components/Navbar'

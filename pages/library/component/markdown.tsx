@@ -14,7 +14,7 @@ const Markdown: FunctionComponent<IProps> = ({content}) => {
             const match = /language-(\w+)/.exec(className || '');
     
             return (!inline && match) ? (
-                <SyntaxHighlighter style={materialLight} PreTag="div" language={match[1]} children={String(children).replace(/\n$/, '')} {...props} />
+                <SyntaxHighlighter style={materialLight} PreTag="div" language={match[1]} >{String(children).replace(/\n$/, '')} </SyntaxHighlighter>
             ) : (
                 <code className={className ? className : ""} {...props}>
                     {children}
@@ -25,7 +25,7 @@ const Markdown: FunctionComponent<IProps> = ({content}) => {
 
 	return (
     <div >
-		<ReactMarkdown children={content} />
+		{content}
 	</div>
     )
 }
