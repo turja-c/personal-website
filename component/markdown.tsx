@@ -1,5 +1,5 @@
 import ReactMarkdown from 'react-markdown';
-import { NormalComponents, SpecialComponents } from 'react-markdown/src/ast-to-react';
+import { NormalComponents, SpecialComponents } from '../node_modules/react-markdown/src/ast-to-react';
 import { materialLight } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
 import { FunctionComponent } from 'react';
