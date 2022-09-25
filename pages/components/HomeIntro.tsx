@@ -81,8 +81,13 @@ const DesktopNav = () => {
             fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} > 
             writing about my 
             learnings, failures and next steps. there&apos;s always someway to grow. so i decided to write publicly and share what i learn. <br></br> <br></br>
-            show up everyday and <b> <a href="https://twitter.com/fredvanvleet" style={{textDecoration: 'underline', cursor: 'pointer'}}>bet on yourself</a></b>.  
         </Text>
+        <VStack>
+        <Text color={'gray.500'}
+            fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} > 
+            show up everyday and <b> <a href="https://twitter.com/fredvanvleet" style={{textDecoration: 'underline', cursor: 'pointer'}}>bet on yourself</a></b>.  
+
+            </Text>
         <Center>
             <Text color={'green.400'}
               fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} 
@@ -93,6 +98,7 @@ const DesktopNav = () => {
             </Link>
         </Text>
         </Center>
+        </VStack>
         
       </Stack>
       </div>

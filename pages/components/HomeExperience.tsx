@@ -20,6 +20,22 @@ import {
   VStack,
 } from '@chakra-ui/react';
 import { ArrowRightIcon } from '@chakra-ui/icons'
+import { motion, Variants } from "framer-motion";
+
+const cardVariants: Variants = {
+  offscreen: {
+    y: 300
+  },
+  onscreen: {
+    y: 0,
+    rotate: 0,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.9
+    }
+  }
+};
 
 interface IBlogTags {
   tags: Array<string>;
@@ -279,6 +295,14 @@ const DesktopNav = () => {
 
   return (
     <div >
+      <motion.div
+      className="card-container"
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 0.8 }}
+    >
+     <motion.div className="card" variants={cardVariants}>
+
     <HStack
       margin={'2rem'}>
         
@@ -366,6 +390,8 @@ const DesktopNav = () => {
             </Box>
       </Box>
     </HStack>
+    </motion.div>
+    <motion.div className="card" variants={cardVariants}>
     <HStack
       margin={'2rem'}>
         <Box
@@ -450,6 +476,8 @@ const DesktopNav = () => {
             </Box>
       </Box>
       </HStack>
+      </motion.div>
+      </motion.div>
       </div>
   );
 };

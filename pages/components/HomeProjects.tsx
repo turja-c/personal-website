@@ -20,6 +20,22 @@ import {
   VStack,
 } from '@chakra-ui/react';
 import { ArrowRightIcon } from '@chakra-ui/icons'
+import { motion, Variants } from "framer-motion";
+
+const cardVariants: Variants = {
+  offscreen: {
+    y: 300
+  },
+  onscreen: {
+    y: 0,
+    rotate: 0,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.9
+    }
+  }
+};
 
 interface IBlogTags {
   tags: Array<string>;
@@ -86,7 +102,15 @@ const DesktopNav = () => {
 
   return (
     <div> 
+      <motion.div
+      className="card-container"
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 0.8 }}
+    >
       <Link href='https://ethglobal.com/showcase/granted-vtxne' _hover={{ textDecoration: 'none' }}>
+      <motion.div className="card" variants={cardVariants}>
+
        <Box 
             position={'relative'}
             height={'150px'}
@@ -120,8 +144,11 @@ const DesktopNav = () => {
         </WrapItem>
       </Wrap>
       </Box>
+        </motion.div>
       </Link>
+     
 
+      <motion.div className="card" variants={cardVariants}>
       <HStack marginTop='-3rem'>
       <Link href='https://github.com/turja-c/unravel' _hover={{ textDecoration: 'none' }}>
         <Box 
@@ -233,10 +260,9 @@ const DesktopNav = () => {
       </Wrap>
       </Box>
       </Link>
-
-      
       </HStack>
-      
+      </motion.div>
+      </motion.div>
     </div>
 
   );
@@ -247,12 +273,20 @@ const MobileNav = () => {
 
   return (
     <div>
+      <motion.div
+      className="card-container"
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 0.8 }}
+    >
+
         <Stack
           bg={useColorModeValue('white', 'gray.800')}
           p={4}
           display={{ md: 'none' }}>
         
-        
+        <motion.div className="card" variants={cardVariants}>
+
         <Box 
             position={'relative'}
             height={'200px'}
@@ -284,8 +318,8 @@ const MobileNav = () => {
         </WrapItem>
       </Wrap>
       </Box>
-
-      {/* <HStack> */}
+      </motion.div>
+      <motion.div className="card" variants={cardVariants}>
         <Box 
             position={'relative'}
             height={'200px'}
@@ -318,7 +352,9 @@ const MobileNav = () => {
         </WrapItem>
       </Wrap>
       </Box>
+    </motion.div>
 
+    <motion.div className="card" variants={cardVariants}>
       <Box 
             position={'relative'}
             height={'200px'}
@@ -352,6 +388,9 @@ const MobileNav = () => {
         </WrapItem>
       </Wrap>
       </Box>
+      </motion.div>
+
+      <motion.div className="card" variants={cardVariants}>
 
       <Box 
           position={'relative'}
@@ -385,9 +424,11 @@ const MobileNav = () => {
         </WrapItem>
       </Wrap>
       </Box>
+      </motion.div>
       
       </Stack>
-
+      
+      </motion.div>
       </div>
       
   );
