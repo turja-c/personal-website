@@ -2,7 +2,6 @@ import { FunctionComponent } from "react";
 import fs from 'fs';
 import matter from "gray-matter";
 import { ArticleInfo } from "../../../interfaces/article";
-import Markdown from "../../../component/markdown";
 import { NextPage } from "next";
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
@@ -30,7 +29,7 @@ const Article: FunctionComponent<IProps> = ({ article }) => {
                 <Text as={'span'} 
                       color={'grey.100'} 
                       fontSize={'1rem'} >
-                     <Markdown content={article.content} />
+                     {article.content} 
                 </Text>
         </Container>
 	</div>
