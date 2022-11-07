@@ -225,6 +225,10 @@ import {
       href: '/',
     },
     {
+      label: 'work',
+      href: '/work',
+    },
+    {
       label: 'library',
       href: '/library',
     },

@@ -19,6 +19,15 @@ import {
   Stack,
   VStack,
   Center,
+  Button,
+  Modal,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  ModalOverlay,
+  useDisclosure,
 } from '@chakra-ui/react';
 import { ArrowRightIcon } from '@chakra-ui/icons'
 
@@ -54,18 +63,9 @@ const MobileNav = () => {
             show up everyday and <b> <a href="https://twitter.com/fredvanvleet" style={{textDecoration: 'underline', cursor: 'pointer'}}>bet on yourself</a></b>.  
         </Text>
         <Center>
-            <Text color={'green.400'}
-              fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} 
-              padding={'2rem'}
-              _hover={{textDecoration: 'underline', cursor: 'pointer'}}> 
-              <Link href='/library'>
-              walk into my library
-            </Link>
-        </Text>
+            <Popup />
         </Center>
-        
       </Stack>
-      
     </Stack>
   );
 };
@@ -89,14 +89,7 @@ const DesktopNav = () => {
 
             </Text>
         <Center>
-            <Text color={'green.400'}
-              fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} 
-              padding={'2rem'}
-              _hover={{textDecoration: 'underline', cursor: 'pointer'}}> 
-              <Link href='/library'>
-              walk into my library
-            </Link>
-        </Text>
+            <Popup />
         </Center>
         </VStack>
         
@@ -104,5 +97,32 @@ const DesktopNav = () => {
       </div>
   );
 };
+
+function Popup() {
+  const { isOpen, onOpen, onClose } = useDisclosure()
+
+  return (
+    <>
+      <Text color={'green.400'}
+              fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} 
+              padding={'2rem'}
+              onClick={onOpen}
+              _hover={{textDecoration: 'underline', cursor: 'pointer'}}> 
+              walk into my library
+        </Text>
+
+      <Modal onClose={onClose} isOpen={isOpen} isCentered>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalBody>
+            <Center>
+            Currently under construction. 
+            </Center>
+          </ModalBody>
+        </ModalContent>
+      </Modal>
+    </>
+  )
+}
 
 export default HomeIntro;
