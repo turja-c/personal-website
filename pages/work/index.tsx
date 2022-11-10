@@ -15,12 +15,12 @@ const Work: NextPage = () => {
       <Navbar />
       <Container maxW={'6xl'} p="12" >
         <Heading as="h1">work</Heading>
-        <Text color={'gray.500'}
+        <Text color={'white.500'}
             fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} 
             marginTop={'1rem'}>
                 here are a few of my past projects and experiences. please feel free to 
                 contact me directly to learn more about my past experiences! <br></br>
-                building in Web3 - intersted in zk proofs, generative AI, etc.
+                building in Web3 - intersted in zk proofs, account abstraction, MEVs and much more.
         </Text>
         </Container>
       {/* <Articles /> */}

@@ -18,9 +18,19 @@ import {
   Container,
   Stack,
   VStack,
+  Button,
+  Modal,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  ModalOverlay,
+  useDisclosure,
 } from '@chakra-ui/react';
 import { ArrowRightIcon } from '@chakra-ui/icons'
 import { motion, Variants } from "framer-motion";
+import styles from '../../styles/Home.module.css'
 
 const cardVariants: Variants = {
   offscreen: {
@@ -37,54 +47,21 @@ const cardVariants: Variants = {
   }
 };
 
-interface IBlogTags {
-  tags: Array<string>;
-  marginTop?: SpaceProps['marginTop'];
-}
 
-const BlogTags: React.FC<IBlogTags> = (props) => {
-  return (
-    <HStack spacing={2} marginTop={props.marginTop}>
-      {props.tags.map((tag) => {
-        return (
-          <Tag size={'md'} variant="solid" colorScheme="orange" key={tag}>
-            {tag}
-          </Tag>
-        );
-      })}
-    </HStack>
-  );
-};
-
-interface BlogAuthorProps {
-  date: Date;
-  name: string;
-}
-
-export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
-  return (
-    <HStack marginTop="2" spacing="2" display="flex" alignItems="center">
-    
-    </HStack>
-  );
-};
-
-const ArticleList = () => {
+const Experiences = () => {
   return (
     <Container maxW={'6xl'} p="12" marginBottom='4rem'>   
     <Flex>
-      <Heading as="h2" marginTop="5">
-        experiences
+      <Heading as="h2" marginTop="5" className={styles.gradient}>
+        Experiences
       </Heading>
       <Spacer />
-      <Text marginTop='2rem' fontWeight={'bold'}>Learn more  
-        &nbsp;
-        <ArrowRightIcon w={3} h={3} /> 
+      <Text marginTop='2rem' fontWeight={'bold'} _hover={{textDecoration: "underline"}}> 
+       <LearnMoreModal />
       </Text>
     </Flex> 
       <Divider marginTop="5" />
 
-      
 
       <Flex display={{ base: 'none', md: 'flex' }}>
               <DesktopNav />
@@ -314,7 +291,13 @@ const DesktopNav = () => {
         _hover={{boxShadow: 'lg'}}
       >
             <Box w="100%">
-              <Box borderRadius="lg" overflow="hidden">
+              <Box borderRadius="lg" overflow="hidden"
+              // bgGradient={[
+              //   'linear(to-tr, purple.100, purple.100)',
+              //   'linear(to-t, blue.100, teal.100)',
+              //   'linear(to-b, blue.50, blue.200)',
+              // ]}
+              >
                 <Link textDecoration="none" _hover={{ textDecoration: 'none'}}>
                   <Image
                     transform="scale(1.0)"
@@ -343,7 +326,13 @@ const DesktopNav = () => {
         overflow={'hidden'}
       >
             <Box w="100%">
-              <Box borderRadius="lg" overflow="hidden">
+              <Box borderRadius="lg" overflow="hidden"
+              // bgGradient={[
+              //   'linear(to-tr, purple.100, purple.100)',
+              //   'linear(to-t, blue.100, teal.100)',
+              //   'linear(to-b, blue.50, blue.200)',
+              // ]}
+              >
                 <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                   <Image
                     transform="scale(1.0)"
@@ -371,7 +360,13 @@ const DesktopNav = () => {
         _hover={{boxShadow: 'lg'}}
       >
             <Box w="100%">
-              <Box borderRadius="lg" overflow="hidden">
+              <Box borderRadius="lg" overflow="hidden"
+              // bgGradient={[
+              //   'linear(to-tr, purple.100, purple.100)',
+              //   'linear(to-t, blue.100, teal.100)',
+              //   'linear(to-b, blue.50, blue.200)',
+              // ]}
+              >
                 <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                   <Image
                     transform="scale(1.0)"
@@ -403,7 +398,13 @@ const DesktopNav = () => {
         _hover={{boxShadow: 'lg' }}
       >
             <Box w="100%">
-              <Box borderRadius="lg" overflow="hidden">
+              <Box borderRadius="lg" overflow="hidden"
+              // bgGradient={[
+              //   'linear(to-tr, purple.100, purple.100)',
+              //   'linear(to-t, blue.100, teal.100)',
+              //   'linear(to-b, blue.50, blue.200)',
+              // ]}
+              >
                 <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                   <Image
                     transform="scale(1.0)"
@@ -430,7 +431,13 @@ const DesktopNav = () => {
         _hover={{boxShadow: 'lg'}}
       >
             <Box w="100%">
-              <Box borderRadius="lg" overflow="hidden">
+              <Box borderRadius="lg" overflow="hidden"
+              // bgGradient={[
+              //   'linear(to-tr, purple.100, purple.100)',
+              //   'linear(to-t, blue.100, teal.100)',
+              //   'linear(to-b, blue.50, blue.200)',
+              // ]}
+              >
                 <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                   <Image
                     transform="scale(1.0)"
@@ -457,7 +464,13 @@ const DesktopNav = () => {
         _hover={{boxShadow: 'lg'}}
       >
             <Box w="100%">
-              <Box borderRadius="lg" overflow="hidden">
+              <Box borderRadius="lg" overflow="hidden"
+              // bgGradient={[
+              //   'linear(to-tr, purple.100, purple.100)',
+              //   // 'linear(to-t, blue.100, teal.100)',
+              //   'linear(to-b, blue.50, blue.200)',
+              // ]}
+              >
                 <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
                   <Image
                     transform="scale(1.0)"
@@ -482,4 +495,100 @@ const DesktopNav = () => {
   );
 };
 
-export default ArticleList;
+
+
+
+  function LearnMoreModal() {
+
+    const OverlayTwo = () => (
+      <ModalOverlay
+        bg='none'
+        backdropFilter='auto'
+        backdropInvert='80%'
+        backdropBlur='2px'
+      />
+    )
+  
+    const { isOpen, onOpen, onClose } = useDisclosure()
+    const [overlay, setOverlay] = React.useState(<OverlayTwo />)
+  
+    return (
+      <>
+        
+        <Box
+          marginBottom={'-21rem'}
+          ml='4'
+          onClick={() => {
+            setOverlay(<OverlayTwo />)
+            onOpen()
+          }}
+          as='kbd'
+        >
+          Learn More <ArrowRightIcon w={3} h={3} />
+        </Box>
+        <Modal isCentered isOpen={isOpen} onClose={onClose} size='2xl' >
+          {overlay}
+          <ModalContent padding={'-10rem'}>
+            <ModalHeader>Experiences</ModalHeader>
+            <ModalCloseButton />
+            <ModalBody marginBottom={'2rem'}>
+              <Flex>
+              <Text>Alchemy</Text>
+              <Spacer/>
+              <Text>Technical Analyst</Text>
+              </Flex>
+
+              <br></br><hr></hr><br></br>
+              <Flex>
+              <Text>Ripple Ventures</Text>
+              <Spacer/>
+              <Text>Venture Analyst</Text>
+              </Flex>
+
+              <br></br><hr></hr><br></br>
+              <Flex>
+              <Text>KPMG</Text>
+              <Spacer/>
+              <Text>Software Engineering Consultant</Text>
+              </Flex>
+              <br></br><hr></hr><br></br>
+
+              <Flex>
+              <Text>Scotiabank</Text>
+              <Spacer />
+              <Text>Strategy and Software Developer</Text>
+              </Flex>
+
+              <br></br><hr></hr><br></br>
+
+              <Flex>
+              <Text>Developer DAO</Text>
+              <Spacer />
+              <Text>Contributor & DevRel</Text>
+              </Flex>
+              <br></br><hr></hr><br></br>
+
+              <Flex>
+              <Text>Toronto Machine Learning Society</Text>
+              <Spacer />
+              <Text>Head Of Digital Marketing</Text>
+              </Flex>
+
+              <br></br><hr></hr><br></br>
+
+              <Flex>
+              <Text>Alo Food Group</Text>
+              <Spacer />
+              <Text>Lead Server Assistant</Text>
+              </Flex>
+
+            </ModalBody>
+            <ModalFooter>
+              <Button onClick={onClose}>Close</Button>
+            </ModalFooter>
+          </ModalContent>
+        </Modal>
+      </>
+    )
+  };
+export default Experiences;

@@ -68,18 +68,17 @@ import {
                 turja chowdhury
               </Text>
             </Heading>
-            <Text color={'gray.500'}
+            <Text color={'white.500'}
             fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} >
-            
             hey there! welcome to my little corner of the internet. 
             </Text>
-            <Text color={'gray.500'}
+            <Text color={'white.500'}
             fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} >
-            i&apos;m driven and passionate about emerging 
-            technologies challenging complex problems. building in Web3 and always learning.
+            building in Web3 and learning about emerging 
+            technologies.
             </Text>
 
-            <Text color={'gray.500'}
+            <Text color={'white.500'}
             fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} >
             📍 CS @ Ryerson University
             </Text>
@@ -165,18 +164,18 @@ import {
                 turja chowdhury
               </Text>
             </Heading>
-            <Text color={'gray.500'}
+            <Text color={'white.500'}
             fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} >
             
             hey there! welcome to my little corner of the internet. 
             </Text>
-            <Text color={'gray.500'}
+            <Text color={'white.500'}
             fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} >
-            i&apos;m driven and passionate about emerging 
-            technologies challenging complex problems. building in Web3 and always learning.
+            building in Web3 and learning about emerging 
+            technologies.
             </Text>
 
-            <Text color={'gray.500'}
+            <Text color={'white.500'}
             fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} >
             📍 CS @ Ryerson University
             </Text>

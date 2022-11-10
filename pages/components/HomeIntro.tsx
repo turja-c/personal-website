@@ -51,12 +51,12 @@ const MobileNav = () => {
   return (
     <Stack
       bg={useColorModeValue('white', 'gray.800')}
-      p={4}
-      display={{ md: 'none' }}>
-    <Stack
-      margin={'2rem'}>
+      // p={4}
+      display={{ md: 'none' }}
+      >
+    <Container maxW='6xl'>
         
-        <Text color={'gray.500'}
+        <Text color={'white.500'}
             fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} > 
             writing about my 
             learnings, failures and next steps. there&apos;s always someway to grow. so i decided to write publicly and share what i learn. <br></br> <br></br>
@@ -65,7 +65,7 @@ const MobileNav = () => {
         <Center>
             <Popup />
         </Center>
-      </Stack>
+      </Container>
     </Stack>
   );
 };
@@ -77,13 +77,15 @@ const DesktopNav = () => {
     <div >
     <Stack
       margin={'2rem'}>
-        <Text color={'gray.500'}
+        <Container
+      margin={'2rem'} maxW='6xl'>
+        <Text color={'white.500'}
             fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} > 
             writing about my 
             learnings, failures and next steps. there&apos;s always someway to grow. so i decided to write publicly and share what i learn. <br></br> <br></br>
         </Text>
         <VStack>
-        <Text color={'gray.500'}
+        <Text color={'white.500'}
             fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} > 
             show up everyday and <b> <a href="https://twitter.com/fredvanvleet" style={{textDecoration: 'underline', cursor: 'pointer'}}>bet on yourself</a></b>.  
 
@@ -92,7 +94,7 @@ const DesktopNav = () => {
             <Popup />
         </Center>
         </VStack>
-        
+        </Container>
       </Stack>
       </div>
   );

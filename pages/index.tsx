@@ -6,15 +6,18 @@ import Navbar from './components/Navbar'
 import HomeBanner from './components/HomeBanner'
 import Footer from './components/Footer'
 import HomeIntro from './components/HomeIntro'
+import { Container } from '@chakra-ui/react'
 
 const Home: NextPage = () => {
   return (
-    <div >
-      <Navbar />
+    <>
+    <Navbar />
+    <Container maxW="6xl">
       <HomeBanner />
       <HomeIntro />
-      <Footer />
-    </div>
+    </Container>
+    <Footer />
+    </>
   )
 }
 
