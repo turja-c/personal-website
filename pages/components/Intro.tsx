@@ -17,9 +17,9 @@ import {
   } from '@chakra-ui/react';
   import { BsTwitter, BsGithub, BsLinkedin, BsTelegram } from 'react-icons/bs';
 
-  export default function CallToActionWithVideo() {
+  export default function Intro() {
     return (
-      <Container maxW={'7xl'} >
+      <Container maxW={'7xl'}>
         <Flex display={{ base: 'none', md: 'flex' }}>
           <DesktopNav/>
         </Flex>
@@ -50,22 +50,23 @@ import {
   
   const DesktopNav = () => {
     return (
-      <Stack
-          align={'center'}
-          spacing={{ base: 8, md: 10 }}
-          py={{ base: 20, md: 28 }}
-          direction={{ base: 'column', md: 'row' }} 
-          marginTop={'-2rem'}
-          marginLeft={'7rem'}
-          >
-          <Stack  spacing={{ base: 2, md: 8 }} >
+
+            <Box
+              position={'relative'}
+              width={'70rem'}
+              rounded={'2xl'}
+              borderWidth='0.2rem'
+              borderColor='gray.200'
+              overflow={'hidden'}
+              p={'6'}
+            >
+          <Stack  spacing={{ md: 5 }} >
+            
             <Heading
               lineHeight={1.1}
               fontWeight={600}
               fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}
               >
-              
-              <br />
               <Text as={'span'} color={'black.400'}>
                 turja chowdhury
               </Text>
@@ -74,17 +75,8 @@ import {
             fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} >
             hey there! welcome to my little corner of the internet. 
             </Text>
-            <Text color={'white.500'}
-            fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} >
-            building in Web3 and learning about emerging 
-            technologies.
-            </Text>
-
-            {/* <Text color={'white.500'}
-            fontSize={{ base: '1.5xl', sm: '1.5xl', lg: '1.5xl' }} >
-            📍 CS @ Ryerson University
-            </Text>
-            <Stack
+            
+            {/* <Stack
               spacing={{ base: 4, sm: 6 }}
               direction={{ base: 'column', sm: 'row' }}>
                <Link href="https://twitter.com/tchowd_" color="#000">
@@ -101,36 +93,29 @@ import {
                 </Link>
             </Stack> */}
           </Stack>
-          <Flex
+          {/* <Flex
             flex={1}
             justify={'center'}
             align={'center'}
             position={'relative'}
             w={'full'}>
             <Blob
-              w={'150%'}
-              h={'120%'}
+              w={'450%'}
+              h={'350%'}
               position={'absolute'}
-              top={'-10%'}
-              left={'-10%'}
+              top={'-125%'}
+              left={'-8%'}
               zIndex={-1}
               color={useColorModeValue('green.50', 'green.400')}
             />
-            <Box
-              // position={'relative'}
-              // height={'300px'}
-              // rounded={'2xl'}
-              // boxShadow={'2xl'}
-              // width={'full'}
-              // overflow={'hidden'}
-              >
+            
                 <Image
                   transform="scale(1.0)"
                   src='/static/turja.png'
                   alt="some text"
                   objectFit="contain"
-                  marginLeft='8rem'
-                  width="40%"
+                  marginLeft='5rem'
+                  width="70%"
                   // shadow={'2xl'}
                   transition="0.3s ease-in-out"
                   _hover={{
@@ -138,9 +123,8 @@ import {
                   }}
                 />
 
-            </Box>
-          </Flex>
-        </Stack>
+          </Flex> */}
+          </Box>
     );
   }
 
